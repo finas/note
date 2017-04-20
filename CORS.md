@@ -9,8 +9,10 @@
 
 原理：浏览与的安全策略（same-Origin-Policy），限制不同域的documents
 和scripts交流。
+
 安全：两个tab页面，标签a直接访问标签b的数据如cookie。
 a.com/stealCookies.js访问icbc.com获取用户cookie破解密码。
+
 规则：
 ```js
 http://www.baidu.com  https://www.baidu.com   //协议不同
@@ -48,7 +50,7 @@ var replaceList=function(arr){
 	//....
 }
 </script>
-<script src="http://test.cdn.com/list?callback=replaceList></script>
+<script src="http://test.cdn.com/list?callback=replaceList"></script>
 ```
 ```js
 //服务器收到/list?callback=replaceList处理后返回
