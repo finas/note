@@ -16,7 +16,9 @@
 
 ## commands
 `ssh-agent -s `开启ssh-agent
+
 `ssh-add -l`添加ssh-key
+
 `ssh -T git@github.com`ssh连接测试
 
 
