@@ -6,9 +6,12 @@
 
 ##### 关键词
 `cheap`：不生成列信息。
-`eval`:每个module通过eval（）来执行。
+`eval`:每个module通过eval（）来执行，build和rebuild速度最快。
 `module`:包含loader（babel）的sourcemap（简化为对应行）。
-`cheap-module-eval-source-map`：<b>cheap</b>提高sourcemap生成效率,<b>module</b>包含loader的sourcemap，<b>eval-source-map</b>将sourcemap以dataurl的形式内嵌，减少网络请求。
+`cheap-module-eval-source-map`：<b>cheap</b>提高sourcemap生成效率,<b>module</b>包含loader的sourcemap，<b>eval-source-map</b>将sourcemap以datauri的形式内嵌，减少网络请求。
+
+##### 效率对比
+<img src="./webpack-sourcemap-rate.png" />
 
 ##### 解释
 | 模式                         | 解释                                                                                                                       |
@@ -108,5 +111,11 @@ eval(
 ...])
 ```
 和eval-source-map相似，但base64的信息中了少了行信息，同时包含了loader的sourcemap信息。
+
+
+##### 更多
+http://mp.weixin.qq.com/s/KaFWSnaIDdISxrJV9DSy7A
+http://cheng.logdown.com/posts/2016/03/25/679045
+http://www.cnblogs.com/hhhyaaon/p/5657469.html
 
 
