@@ -21,19 +21,19 @@
 
 
 ## QA
-1. **ssh add agent has no identities**
+1. ***ssh add agent has no identities***
 
    ssh key没有被添加到agent，执行`ssh-add ~/.ssh/id_rsa`
 
-2. **Permissions 0770 for 'id_rsa_github' are too open.** 
+2. ***Permissions 0770 for 'id_rsa_github' are too open.***
 
    ssh key 没有权限被使用，执行`chmod 600 ~/.ssh/id_rsa`
 
-3.  **Permission denied (publickey)** 
+3.  ***Permission denied (publickey)*** 
 
- 1. 检查是否已经连接到server,执行`ssh -T git@github.com`
- 2. 查看ssh key是否被添加，执行`ssh-add ~/.ssh/id_rsa`
+ - 检查是否已经连接到server,执行`ssh -T git@github.com`
+ - 查看ssh key是否被添加，执行`ssh-add ~/.ssh/id_rsa`
 
-4. **authenticity of host 'github.com can't be established**
+4. ***authenticity of host 'github.com can't be established***
 
    添加到know_host `ssh-keyscan github.com >> ~/.ssh/known_hosts`
