@@ -1,13 +1,16 @@
 # Webpack Sourcemap
 
-#####一句话
+##### 一句话
 开发时可以参考使用 `cheap-module-eval-source-map`。
 
 
 ##### 关键词
 `cheap`：不生成列信息。
+
 `eval`:每个module通过eval（）来执行，build和rebuild速度最快。
+
 `module`:包含loader（babel）的sourcemap（简化为对应行）。
+
 `cheap-module-eval-source-map`：<b>cheap</b>提高sourcemap生成效率,<b>module</b>包含loader的sourcemap，<b>eval-source-map</b>将sourcemap以datauri的形式内嵌，减少网络请求。
 
 ##### 效率对比
