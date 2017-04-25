@@ -27,7 +27,9 @@ Ctrl+Shift+M
 
 ctrl+shift+d
 
-Ctrl+Shift+Enter
+Ctrl+shift+up(left,right,down) 移动当前行
+
+Ctrl+Shift+Enter：在当前之前插入一行
 
 Ctrl+Enter
 
