@@ -1,72 +1,78 @@
-# title 
-
+# self sublime shortcuts record 
+>>beyond the window 
 #### search:
-Ctrl+P
+`Ctrl+P` 	find file
 
-Ctrl+R
+`Ctrl+R`  find function
 
-Ctrl+G
+`Ctrl+G` go to line
+
+`Shift+f3` previous_find
 
 
-#### special
-F6
-
-Shift+f11
-
-Ctrl+KU
 
 #### select
 
-Ctrl+D
+`Ctrl+D` select current word or select next occurance 
 
-Ctrl+L
+`Ctrl+L` select current line or select next line
 
-Ctrl+Shift+M
+`Ctrl+Shift+M` select current block
+
+#### move
+`ctrl+m` jump between bracket 
+
+`escape + $` move 2 line tail 
+
+`Alt+shift+number` open the number of column
+
+`Alt+number` switch the current colum order
+
+`Ctrl+shift+up(left,right,down)` move current line to direction
 
 #### action
 
-ctrl+shift+d
+`ctrl+shift+d` copy current line to next line
 
-Ctrl+shift+up(left,right,down) 移动当前行
+`ctrl+enter` new next line 
 
-Ctrl+Shift+Enter：在当前之前插入一行
+`ctrl+shift+enter` new prev line
 
-Ctrl+Enter
+`Ctrl+Shift+M`
 
-Ctrl+Shift+M
+`Ctrl+Shift+W` close all file opened
 
-Ctrl+Shift+W
+`Ctrl+Shift+V` paste from copyboard with format
 
-Ctrl+Shift+V
-
-#### move
-ctrl+m
-
-escape + $
-
-Alt+shift+number
-
-Alt+number 
-
-Ctrl+Shift+↑
+`Ctrl+U` undo last action
 
 
 #### delete
-Ctrl+X
+`Ctrl+X` cut current line
 
-Ctrl+K+K
+`Ctrl+K+K` 
 
-Ctrl+Shift+K
+`Ctrl+Shift+[` fold code
 
-Ctrl+Shift+[
+#### special
+`F6` spell check
 
+`Ctrl+K+B` toggle the nav_bar
+
+`alt+-` cursor position jump_back
+
+`alt+shift+` cursor position jump_forward 
+
+`Shift+f11` silent mode
+
+`CTRL+KU` uppercase words
 
 #### combo
 Ctrl+N ->Ctrl+Shift+P->enter `set syntax:markdown`
 
-Ctrl+D ->Ctrl+U
+`Ctrl+D ->Ctrl+U` select same multi occurance then undo
 
-select multiLine->Ctrl+Shift+L
+`Ctrl+L->Ctrl+Shift+L` multi carets at the end of multi lines
 
 #### tips
 1. Mouse right menu:
@@ -79,4 +85,4 @@ Go to Sublime Text > Preferences > Settings - User
 Add a "rulers" setting with the lines you want for the ruler:
 
 `// Adds a single vertical ruler at column 80
-"rulers": [80],`
+"rulers": [80],` 
