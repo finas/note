@@ -26,7 +26,8 @@ www.taobao.com',xhrFields:{withCredentials:true}})`
 2. <b style="font-size:12px">JSONP不带上cookie的方法。</b><br/> 
 每次reload时clean-cookie,开始js请求（这时cookie已被清空不会带上）, 然后set-cookie，
 之后如果有同域名下的js请求会带有cookie<br/>
-<img src="./images/cookie-cors-github.gif" /><br/>
+
+	![](../images/cookie-cors-github.gif)<br/>
 *测试方法：修改github的cookie->getScript(带有修改后cookie)->refresh(修改的cookie被重置)*
 
 
