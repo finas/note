@@ -3,6 +3,8 @@
 <i style="font-size:14px;opacity:0.5">写在前面:之前的跨域的理解存在偏差和误解，重新整理。</i>
 
 
+<i style="font-size:14px;opacity:0.5">cookie跨域 详见<a href="./cookie-cors.md">cookie-cors</a></i>
+
 
 #### 存在跨域的原因：
 >>Same-Origin-Policy(SOP):protocal,host,and port number shoud be same.
@@ -27,6 +29,8 @@ www.baidu.com:80  www.baidu.com:81			//端口不通
 4. 网站部署在子域名
 2. 新的网站需要访问老业务的api（music.baidu.com访问map.baidu.com的数据或cookie)
 3. 接入插件和扩展（如forum）
+
+
 
 #### 浏览器表现：
 >>For Cross-Origin HTTP requests in specific, the SOP prescribes the following general rules: Cross-Origin writes are allowed,Cross-Origin reads are not.
@@ -77,7 +81,7 @@ replaceList([{
 Get  /proxy?urlToFetch=http://b.com/list
 ```
 缺点：
-1. 不能发送cookie（严重的drawback，如没有登录的状态）
+1. 后端需要部署代码
 2. 速度可能会变慢
 
 ##### 3.CORS
@@ -92,13 +96,13 @@ Access-Control-Allow_origin:http://a.com
 Content-Type:application/json;charset=utf-8
 Content-Length:10
 {
-	"data":[{
-    	title:'2016',
-        content:'这是第一条内容'
-    },{
-    	title:'2017',
-        content:'这是第二条内容'
-    }]
+    "data":[{
+    	   title:'2016',
+           content:'这是第一条内容'
+        },{
+    	   title:'2017',
+           content:'这是第二条内容'
+        }]
 }
 ```
 缺点：
@@ -109,4 +113,4 @@ Content-Length:10
 ### 总结
 1. 之前理解为服务器收到CORS的请求，拒绝返回数据，真相是服务器正确返回数据，浏览器也能正常接受数据，但限制脚本对数据的读取。
 2. 之前理解为服务器判断发起请求的domain，真相是浏览器判断response的allow-origin和发起请求的domain。
-2. CORS通吃get和post，但需要配置服务器。
+3. CORS通吃get和post，但需要配置服务器。

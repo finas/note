@@ -1,5 +1,14 @@
 # self sublime shortcuts record 
 >>beyond the window 
+
+#### 日常操作
+`Ctr+P//打开目标文件`<br/>
+`Alt+Shift+2//分离为两列`<br/>
+`Ctrl+R//找到目标函数`<br/>
+
+
+
+
 #### search:
 `Ctrl+P` 	find file
 
