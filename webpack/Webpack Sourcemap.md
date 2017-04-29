@@ -14,7 +14,7 @@
 `cheap-module-eval-source-map`：<b>cheap</b>提高sourcemap生成效率,<b>module</b>包含loader的sourcemap，<b>eval-source-map</b>将sourcemap以datauri的形式内嵌，减少网络请求。
 
 ##### 效率对比
-<img src="./images/webpack-sourcemap-rate.png" />
+<img src="../images/webpack-sourcemap-rate.png" />
 
 ##### 解释
 | 模式                         | 解释                                                                                                                       |

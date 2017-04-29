@@ -15,13 +15,13 @@ www.taobao.com',xhrFields:{withCredentials:true}})`
 应用场景taobao.com和tmall.com其中一个登录，访问另一个网址带有登录信息<br/>
 先访问taobao.com进行登录，response进行set-cookie，*.taobao.com下现在存有用户信息cookie。<br/>
 然后访问tmall，页面会请求自top-tmm.taobao.com下的login_api.do（script标签），script带上\*.taobao.com域名下cookie（这段cookie在tmall.com域名下的脚本是不能直接访问到），服务器接收请求进行cookie判断返回用户信息
-	<img src="./images/tmall-login-request.png" />
+	<img src="../images/tmall-login-request.png" />
 	请求登录
-	<img src="./images/tmall-login-redirect.png" />
+	<img src="../images/tmall-login-redirect.png" />
 	重定向到pass.tmall（重定向的地址中带有cookie信息）
-	<img src="./images/tmall-login-redirect-url.png" />
+	<img src="../images/tmall-login-redirect-url.png" />
 	设置tmall.com下的cookie
-	<img src="./images/tmall-login-setCookie.png"/> 
+	<img src="../images/tmall-login-setCookie.png"/> 
 
 2. <b style="font-size:12px">JSONP不带上cookie的方法。</b><br/> 
 每次reload时clean-cookie,开始js请求（这时cookie已被清空不会带上）, 然后set-cookie，
