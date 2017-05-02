@@ -4,7 +4,14 @@
 >>跨域请求默认不带cookie，需要设置withCredentials为true
 
 `$.ajax({url:'http://
-www.taobao.com',xhrFields:{withCredentials:true}})`
+www.taobao.com',xhrFields:{withCredentials:true}})`<br/>
+同时服务器需要设置access-control-allow-:true,且credentialsacess-control-allow-origin不能为*，必须为发起请求的域名
+```
+Access-Control-Allow-Methods: GET, POST
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: http://origin.foo
+Access-Control-Allow-Headers: Content-Type, *
+```
 
 #### JSONP 
 >>JSONP请求自带cookie(请求域名，不是发起请求的域名)
