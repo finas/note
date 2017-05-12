@@ -30,3 +30,9 @@ git别名
     git stash save <message>//saving with message
     git stash save --all //ignored,untracked,trancked
     git checkout stash@{0} --<file_path>
+
+
+
+过滤commit内容
+
+    git log --reverse --grep="update"
