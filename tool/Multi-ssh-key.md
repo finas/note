@@ -5,7 +5,7 @@
 生成新的ssh key
 
 
-`ssh-keygen -t rsa -f c:/Users/hlh/.ssh/id_rsa_github -C"gameBoyStay13@gmail.com`
+`ssh-keygen -t rsa -f c:/Users/hlh/.ssh/id_rsa_github -C "gameBoyStay13@gmail.com" `
 
 #### step2
 将ssh key添加到ssh-agent
@@ -39,3 +39,19 @@
 4. ***authenticity of host 'github.com can't be established***
 
    添加到know_host `ssh-keyscan github.com >> ~/.ssh/known_hosts`
+
+
+## config
+    #aaa  (xiaohulu 配置)
+    Host code.hub520.com
+        StrictHostKeyChecking=no
+        UserKnownHostsFile=/dev/null
+        User chenhao@xiaohulu.com
+        IdentityFile C:\Users\Dell\.ssh\xiaohulu_id_rsa 
+
+    #github 
+    Host github.com
+        StrictHostKeyChecking=no
+        UserKnownHostsFile=/dev/null
+        User gameboystay13@gmail.com
+        IdentityFile C:\Users\Dell\.ssh\id_rsa_github 
