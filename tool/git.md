@@ -30,7 +30,9 @@ git别名
     git stash save <message>//saving with message
     git stash save --all //ignored,untracked,trancked
     git checkout stash@{0} --<file_path>
-
+    git diff --name-only stash@{0} master //stashed file name-only 
+    git stash show -p //diff between stash and HEAD
+    git stash show -p stash@{1}//
 
 
 过滤commit内容
