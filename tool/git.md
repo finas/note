@@ -10,6 +10,11 @@ git别名
 
 `git config --global alias.st status `
 
+设置和切换remote(http=>ssh)
+
+    git remote -v
+    git remote set-url origin git@test.com
+
 切换到之前的分支
 
 ``` git checkout - ```
@@ -38,3 +43,14 @@ git别名
 过滤commit内容
 
     git log --reverse --grep="update"
+
+移除指定的commit
+- 带有的log的revert 安全模式
+
+    ``` git revert --strategy resolve <commit> ```
+- 使用rebase的pick和drop
+
+    ``` git rebase i HEAD~5  ```
+
+- 快速移除一个指定的commit
+    ``` git rebase --onto commit-id^ commit-id ```
