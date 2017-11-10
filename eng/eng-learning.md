@@ -3,3 +3,6 @@
 
 + **thing is not opacity**
 *`opaque`*
+
++ **show the image small** 
+*`thumbnail`* *`preview`*
