@@ -54,8 +54,7 @@ var replaceList=function(arr){
 	//....
 }
 </script>
-<script src="http://test.cdn.com/list?callback=replaceList"></script>
-```
+<script src="http://test.cdn.com/list?callback=replaceList"></script>`
 ```js
 //服务器收到/list?callback=replaceList处理后返回
 //responseTxt
