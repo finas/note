@@ -1,7 +1,6 @@
-# Base
-`<base href="http://douban.com">`
+## `<base href="http://douban.com">`
 
-affect the url related servier(eg. a.href ajax.url) 
+affect the url related servier(eg. `<a>` `ajax`) 
 
 
 ## `<a>`
@@ -20,6 +19,14 @@ preflighted request will added in cross-domain request with relative path except
 
 
 
-## QA
-+ Does the server accpet two request when ajax preflight happend
+### QA
++ Would server accpet double  same requests when ajax preflight happend ?
+
+
+
+
+
+### ANSWER
+1. handle the option request to prevent same request //it can be a strange action if there is a add or delete action 
+
     

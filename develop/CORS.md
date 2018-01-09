@@ -110,6 +110,6 @@ Content-Length:10
 
 
 ### 总结
-1. 之前理解为服务器收到CORS的请求，拒绝返回数据，真相是服务器正确返回数据，浏览器也能正常接受数据，但限制脚本对数据的读取。
+1. 之前理解为服务器收到CORS的请求，拒绝返回数据，真相是服务器正确返回数据，浏览器也能正常接受数据，但限制脚本对数据的读取。(updated 2018-01-09)一些跨域请求如`$.get('http://www.baidu.com')`chrome的response的结果是fail to load response,但是firefox的response标签是有结果但是success方法还是无法调用。
 2. 之前理解为服务器判断发起请求的domain，真相是浏览器判断response的allow-origin和发起请求的domain。
 3. CORS通吃get和post，但需要配置服务器。
