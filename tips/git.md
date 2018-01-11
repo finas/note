@@ -1,5 +1,14 @@
 # git tips
 
+设置 config 参数
+
+``` git config --global user.name "link" ```
+
+获取git 的url
+
+``` git remote -v```
+
+
 修改remote的url
 
 ``` git remote set-url origin <url> ```
