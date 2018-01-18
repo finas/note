@@ -39,3 +39,8 @@ socket.connect(80,'www.baidu.com',function(){
 })
 socket.on('data',data=>console.log(data))
 ```
+
+## conclusion
+In practice, in the modern context of writing to a text file, you should always use \n (the underlying runtime will translate that if you're on a weird OS, e.g., Windows;-). The only reason to use \r is if you're writing to a character terminal (or more likely a "console window" emulating it) and want the next line you write to overwrite the last one you just wrote (sometimes used for goofy "ascii animation" effects of e.g. progress bars) -- this is getting pretty obsolete in a world of GUIs, though;-).
+
+[stackoverflow](https://stackoverflow.com/questions/1761051/difference-between-n-and-r?noredirect=1&lq=1)

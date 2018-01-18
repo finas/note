@@ -1,6 +1,5 @@
 1. <a href="#set-cookie"> set-cookie</a>
-2. <a href="#URL">URL</a>
-3. <a href="#git-merge">git rebase or merge</a>
+2. <a href="#git-merge">git rebase or merge</a>
 
 
 
@@ -42,16 +41,9 @@ For example, if Path=/docs is set, these paths will match:
 + `/docs/Web/`
 + `/docs/Web/HTTP`
 
-### ref
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies">https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies</a>
-<a href="https://stackoverflow.com/questions/1062963/how-do-browser-cookie-domains-work">
-https://stackoverflow.com/questions/1062963/how-do-browser-cookie-domains-work
-</a>
+**ref**
 
-
-
-<a id='URL'></a>
-# URL 
+[mdn](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies),[stackoverflow](https://stackoverflow.com/questions/1062963/how-do-browser-cookie-domains-work)
 
 
 
