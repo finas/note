@@ -1,6 +1,7 @@
 
 1. <a href="#ready">Jquery ready function</a>
-2. 
+2. <a href="#triggerEvent">trigger html event</a>
+
 
 
 
@@ -9,6 +10,7 @@
 
 
 <a id="ready"></a>
+*excute the function after dom content has loaded*
 
 ```js
 function ready(callback) {
@@ -25,4 +27,26 @@ function ready(callback) {
 ready(function () {
     // do something
 });
+```
+
+
+<a id="triggerEvent"></a>
+
+*may helpful when trigger event in plain js*
+```js
+function triggerEvent(el, type){
+   if ('createEvent' in document) {
+        // modern browsers, IE9+
+        el.dispatchEvent(new Event(type,{
+            "bubbles":true,
+            "cancelable":false
+        }))
+    } else {
+        // IE 8
+        var e = document.createEventObject()
+        e.eventType = type
+        el.fireEvent('on'+e.eventType, e)
+    }
+}
+triggerEvent(document.querySelector('input'),'focus')
 ```
