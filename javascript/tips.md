@@ -26,6 +26,20 @@ for(const [index,elem] of arr.entries()){
 }
 ```
 
+#### iterate through key-value gracefully
+```js
+const obj = { a: 5, b: 7, c: 9 };
+for (const [key, value] of Object.entries(obj)) {
+  console.log(`${key} ${value}`); // "a 5", "b 7", "c 9"
+}
+
+// Or, using array extras
+Object.entries(obj).forEach(([key, value]) => {
+    console.log(`${key} ${value}`); // "a 5", "b 7", "c 9"
+});
+```
+
+
 #### Array destructuring work for regex
 ```js
 const [all, year, month, day] = 
@@ -72,11 +86,23 @@ const arr3 = [...arrayLike];
 ```
 
 
+#### Converting an Object to a Map
+
+```js
+const obj = { foo: 'bar', baz: 42 }; 
+const map = new Map(Object.entries(obj));
+console.log(map); // Map { foo: "bar", baz: 42 }
+
+//pitfall
+
+```
+
 #### Named parameters
 ```js
-function bar(options = {}) {
-    let { namedParam1, namedParam2 } = options;
+function bar({ namedParam1, namedParam2 }) {
+    console.log({ namedParam1, namedParam2 })
 }
+bar({namedParam1:1,namedParam2:2})
 ```
 
 #### Referring to "inner" variables in default values
@@ -89,3 +115,51 @@ function bar(callback = () => QUX) {
 }
 bar(); // 2
 ```
+
+#### funny destructuring
+
+```js
+// 
+const {length:len} = 'abc'     // len = 3
+const {toString:s} = 123       // s = Number.prototype.toString
+const { prop: x } = undefined; // TypeError
+
+//default value
+// undefined triggers default values
+const {x:y=-1} = {z:2} // y = -1 
+const [{prop:x} = {prop:-1}] = [] //x = -1 
+const [x=1] = [undefined]; // x = 1 
+const [{ prop: x=123 } = {}] = [{}] //x = 123
+
+
+// Array pattern only work with iterables
+const [x] = {x:1} // Type Error, empty objects are not iterable 
+
+```
+
+#### new Math methods
+
+```js
+Math.truc(-3.9) //-3
+Math.hypot(3,4) //5
+Math.sign(-8)  //-1 to be indicated positive ,negative or zero
+
+```
+
+#### new others
+```js
+const obj = {
+    ['h'+'ello'](){
+        return 'hello'
+    }
+}
+obj.hello() // hello
+
+
+Object.assign(obj={a:1},{a:2,b:3}) //obj = {a:2,b:3}
+Object.assign(obj,{a:5}) //obj = {a:5,b:3}
+
+//Typed Arrays for JPEG SOF0 decoder 
+```
+
+[es6](http://exploringjs.com/es6)

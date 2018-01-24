@@ -1,1 +1,2 @@
-### tldr => too long dont read 
+### tldr    => too long dont read 
+### imo     => in my opinion
