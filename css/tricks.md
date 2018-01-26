@@ -10,5 +10,12 @@
 
 `overflow:hidden =>overflow-y:scroll`
 
+3.正则class或者属性
+
+`[class*="bg_step"]`
+
+`[selfAttr^="open"]`
+
+
 
 
