@@ -29,6 +29,10 @@ netstat -tulnp
 
 ```
 
+**tracert  traceroute**
+```bash
+```
+
 
 *virtualBox*
 ```bash
