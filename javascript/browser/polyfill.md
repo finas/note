@@ -1,6 +1,7 @@
 
 1. <a href="#ready">Jquery ready function</a>
 2. <a href="#triggerEvent">trigger html event</a>
+3. <a href="#getDaysInOneMonth">getDaysInOneMonth</a>
 
 
 
@@ -49,4 +50,20 @@ function triggerEvent(el, type){
     }
 }
 triggerEvent(document.querySelector('input'),'focus')
+```
+
+
+<a id="getDaysInOneMonth"></a>
+
+
+*calculate how many days in specified month*
+
+```js
+function getDaysInOneMonth(year, month){  
+  month = parseInt(month, 10);  
+  var d= new Date(year, month, 0);  
+  return d.getDate();  
+}  
+
+getDaysInOneMonth(2018,2)
 ```
