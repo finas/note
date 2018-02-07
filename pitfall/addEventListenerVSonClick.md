@@ -6,7 +6,7 @@
 2. caniuse neither of them in any siutation ?
 3. what's diffirent between `document.ondomcontentready` and `document.addEventListener('DOMContentLoaded')`
 
-##` element.addEventListener()`
+## `element.addEventListener()`
 
 `element.addEventListener()` has multiple advantages:
 
@@ -33,4 +33,7 @@ This was a way to register event handlers in DOM 0. It's now discouraged, becaus
 the DOM "load" event still does only work very limited. That means it'll only fire for the `window object`, `images` and `<script>` elements for instance. The same goes for the direct onload assignment. There is no technical difference between those two. Probably `.onload =` has a better cross-browser availabilty.
 
 However, you cannot assign a `load event` to a `<div>` or `<span>` element or whatnot.
+
+
+
 [stackoverflow](https://stackoverflow.com/questions/6348494/addeventlistener-vs-onclick)
