@@ -28,6 +28,10 @@ git别名
     git remote -v
     git remote set-url origin git@test.com
 
+回滚到指定的版本
+
+```git checkout c5f567~1 -- file1/to/restore file2/to/restore```
+
 切换到之前的分支
 
 ``` git checkout - ```
@@ -68,3 +72,5 @@ git别名
 - 快速移除一个指定的commit
 
     ``` git rebase --onto commit-id^ commit-id ```
+
+[checkout_vs_revert](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)

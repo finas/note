@@ -25,7 +25,24 @@ eg.
 ```bash
 nc www.baidu.com 80
 GET / HTTP/1.1
-Host www.baidu.com
+Host: www.baidu.com
+#line break
+#line break
+<html>
+.......
+</html>
+
+# nc cannot connect https
+# openssl s_client -connect server:port
+
+openssl s_client -connect www.baidu.com 443
+GET / HTTP/1.1
+Host: www.baidu.com 
+#line break
+#line break
+<html>
+.......
+</html>
 
 
 ```
