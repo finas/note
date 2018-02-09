@@ -13,6 +13,7 @@
 **wrapper**         ->封装  
 **trip up**         ->绊倒，犯错误  
 **propagate**       ->传播  
+**as for**          ->至于
 
 
 ---
@@ -20,6 +21,7 @@
 ### word in PDF
 **preface**         ->前言  
 **wrap up**         ->收尾  
+**conclusion**      ->结语  
 **footnote**        ->脚注，备注  
 **annotation**      ->注解，注解             (type annotation)  
 **convention**      ->会议，约定  
@@ -43,7 +45,9 @@
 **stand alone**     ->独一无二，孤立的  
 **pin down**        ->确定；使受约束  
 **misconception**   ->误解  
-
+**unintuitive**     ->直觉性  
+**overlook**        ->忽视
+**ubiquitous**      ->普及
 
 ---  
 
@@ -59,5 +63,6 @@
 **gate bridge** -> 网桥  
 **scaffold**  -> 脚手架  
 **idle**  -> 闲置的；懒惰的 
+**flow chart** -> 流程图
 
 

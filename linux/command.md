@@ -1,4 +1,13 @@
 
+1. <a href="#curl">curl</a>,
+<a href="#netstat">netstat</a>,
+<a href="#ssh">ssh</a>,
+<a href="#virtualBox">virtualBox</a>,
+<a href="#netsh">netsh</a>,
+<a href="#curl">curl</a> <a href="#curl">curl</a>,
+
+
+<a id="curl"></a>
 *curl*
 ```bash
 #test my socks5 server status
@@ -13,6 +22,9 @@ curl --head https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.js | \
 #-i
 ```
 
+
+<a id="netstat"></a>
+
 **netstat**
 ```bash
 netstat -tulnp
@@ -22,6 +34,7 @@ netstat -tulnp
 #--l listening server sockets
 
 ```
+<a id="ssh"></a>
 
 
 **ssh**
@@ -29,10 +42,7 @@ netstat -tulnp
 
 ```
 
-**tracert  traceroute**
-```bash
-```
-
+<a id="virtualBox"></a>
 
 *virtualBox*
 ```bash
@@ -47,6 +57,7 @@ VBoxManage startvm MyVM --type headless
 VBoxManage controlvm MyVM poweroff
 ```
 
+<a id="netsh"></a>
 **netsh** (*window*)
 ```dos
 rem 假定需要通过192.168.1.8的14941端口连接192.168.1.118的1494端口，则需要在192.168.1.8主机的命令行输入如下语句
