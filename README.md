@@ -1,91 +1,106 @@
 # sharing
 *一些读书分享，个人总结*
 
-### Project structure
-```bash
-.
-|   README.md
-|   term.md
-|   vim.md
-|   
+### 
+
+<!-- START_PROJECT_STRUCTURE -->
+<pre>
+|   <a href="./README.md">README.md</a>
+|   <a href="./term.md">term.md</a>
+|   <a href="./tree.md">tree.md</a>
+|   updateReadMeLink.js
+|   <a href="./vim.md">vim.md</a>
++---.vscode
 +---backup
 |       Shadowsocks-win-dotnet4.0-2.5.2.7z
-|       
 +---css
-|       tricks.md
-|       white-space.md
-|       
+|       <a href="./css/tricks.md">tricks.md</a>
+|       <a href="./css/white-space.md">white-space.md</a>
 +---daily_record
-|       snippet.md
-|       verbose.md
-|       
+|       <a href="./daily_record/QA.md">QA.md</a>
+|       <a href="./daily_record/snippet.md">snippet.md</a>
+|       <a href="./daily_record/verbose.md">verbose.md</a>
 +---develop
-|   |   CORS-base_tag.md
-|   |   CORS.md
-|   |   
+|   |   <a href="./develop/CORS-base_tag.md">CORS-base_tag.md</a>
+|   |   <a href="./develop/CORS.md">CORS.md</a>
 |   +---chrome
-|   |       remote debug.md
-|   |       
+|   |       <a href="./develop/chrome/remote debug.md">remote debug.md</a>
 |   \---webpack
-|           Webpack Sourcemap.md
-|           
+|           <a href="./develop/webpack/Webpack Sourcemap.md">Webpack Sourcemap.md</a>
 +---eng
-|       eng-learning.md
-|       funny-tranlsate.md
-|       pro.md
-|       shortcut.md
-|       sign.md
-|       variable-name.md
-|       
+|       <a href="./eng/eng-learning.md">eng-learning.md</a>
+|       <a href="./eng/funny-tranlsate.md">funny-tranlsate.md</a>
+|       <a href="./eng/pro.md">pro.md</a>
+|       <a href="./eng/shortcut.md">shortcut.md</a>
+|       <a href="./eng/sign.md">sign.md</a>
+|       <a href="./eng/variable-name.md">variable-name.md</a>
 +---foundation
-|       cookie-cors.md
-|       CRLF.md
-|       encoding.md
-|       handleRequest.md
-|        
+|       <a href="./foundation/cookie-cors.md">cookie-cors.md</a>
+|       <a href="./foundation/CRLF.md">CRLF.md</a>
+|       <a href="./foundation/encoding.md">encoding.md</a>
+|       <a href="./foundation/handleRequest.md">handleRequest.md</a>
++---images
+|       05.svg
+|       cookie-cors-github.gif
+|       cookie-cors-tmall.png
+|       cookie-cors-tmall_login.png
+|       git-pull.jpg
+|       tmall-login-redirect-url.png
+|       tmall-login-redirect.png
+|       tmall-login-request.png
+|       tmall-login-setCookie.png
+|       tmp_circleNo_array.png
+|       tmp_circleNo_ing1_array.png
+|       tmp_circleNo_ing2_array.png
+|       tmp_circleNo_ing3_array.png
+|       tmp_origin2_array.png
+|       tmp_originNo_array.png
+|       tmp_originNo_ing1_array.png
+|       tmp_originNo_ing_array.png
+|       tmp_origin_array.png
+|       tmp_result_array.png
+|       webpack-sourcemap-rate.png
 +---javascript
-|   |   tips.md
-|   |   
+|   |   <a href="./javascript/tips.md">tips.md</a>
 |   +---browser
-|   |       onError.md
-|   |       polyfill.md
-|   |       
+|   |       <a href="./javascript/browser/onError.md">onError.md</a>
+|   |       <a href="./javascript/browser/polyfill.md">polyfill.md</a>
 |   \---node
-|           url.md
-|           
+|           <a href="./javascript/node/url.md">url.md</a>
 +---linux
-|       command.md
-|       font-cn.md
-|       snippet.md
-|       
+|       <a href="./linux/command.md">command.md</a>
+|       <a href="./linux/font-cn.md">font-cn.md</a>
+|       <a href="./linux/snippet.md">snippet.md</a>
++---net
+|       <a href="./net/wireless mode.md">wireless mode.md</a>
 +---pitfall
-|       addEventListenerVSonClick.md
-|       attribute_property.md
-|       
+|       <a href="./pitfall/addEventListenerVSonClick.md">addEventListenerVSonClick.md</a>
+|       <a href="./pitfall/attribute_property.md">attribute_property.md</a>
 +---proxy
-|       readme.md
-|       
+|       <a href="./proxy/readme.md">readme.md</a>
 +---tips
-|   |   git.md
-|   |   sublime.md
-|   |   vsc-lint.md
-|   |   
+|   |   <a href="./tips/git.md">git.md</a>
+|   |   <a href="./tips/sublime.md">sublime.md</a>
+|   |   <a href="./tips/vsc-lint.md">vsc-lint.md</a>
 |   \---conf
 |           .eslintrc
-|           editorConfig.md
+|           <a href="./tips/conf/editorConfig.md">editorConfig.md</a>
 |           nginx.conf
-|           ssh-key.md
-|           
+|           <a href="./tips/conf/ssh-key.md">ssh-key.md</a>
 +---why
-|   |   why nodejs.md
-|   |   why python.md
-|   |   
+|   |   <a href="./why/why nodejs.md">why nodejs.md</a>
+|   |   <a href="./why/why python.md">why python.md</a>
 |   \---node
-|           compare.md
-|           event-loop.md
-|           non-blocking.md
-|           
-\---work_related
-        openApp_ios.md
-        
+|           <a href="./why/node/compare.md">compare.md</a>
+|           <a href="./why/node/event-loop.md">event-loop.md</a>
+|           <a href="./why/node/non-blocking.md">non-blocking.md</a>
+</pre>
+<!-- END_PROJECT_STRUCTURE -->
+
+
+
+```bat
+    REM update Project structure (only in window)
+    1.cd sharing
+    2.tree /F /A >tree.md && node updateReadMeLink.js
 ```
