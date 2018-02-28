@@ -81,3 +81,20 @@ xhr.open('GET', 'http://example.com/', true);
 xhr.withCredentials = true;
 xhr.send(null);
 ```
+
+
+#### copy multi-dimensional array
+```js
+function copy(o) {
+   var out, v, key;
+   out = Array.isArray(o) ? [] : {};
+   for (key in o) {
+       v = o[key];
+       out[key] = (typeof v === "object") ? copy(v) : v;
+   }
+   return out;
+}
+
+JSON.parse(JSON.stringify(cloneThis));
+
+```
