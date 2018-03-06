@@ -28,6 +28,18 @@ git别名
     git remote -v
     git remote set-url origin git@test.com
 
+找回删除的文件
+```bash
+    git rev-list -n 1 HEAD -- <file_path>  # find last file commit id
+    git checkout <deleting_commit>^ -- <file_path>   # then checkout it
+
+    git checkout $(git rev-list -n 1 HEAD -- "$file")^ -- "$file" # commbined into one line
+
+
+    git log --diff-filter=D --summary # filter the delete log
+```
+
+
 回滚到指定的版本
 
 ```git checkout c5f567~1 -- file1/to/restore file2/to/restore```
