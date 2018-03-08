@@ -39,6 +39,11 @@ netstat -tulnp
 
 **ssh**
 ```bash
+# allow password for specified user
+# ssh_config
+PasswordAuthentication no
+Math User <username>
+    PasswordAuthentication yes
 
 ```
 

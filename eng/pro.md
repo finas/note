@@ -14,6 +14,8 @@
 **trip up**         ->绊倒，犯错误  
 **propagate**       ->传播  
 **as for**          ->至于
+**mandatory**       ->强制的，托管的  
+**precise**         ->精准的
 
 
 ---
