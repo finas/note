@@ -4,7 +4,8 @@
 <a href="#ssh">ssh</a>,
 <a href="#virtualBox">virtualBox</a>,
 <a href="#netsh">netsh</a>,
-<a href="#curl">curl</a> <a href="#curl">curl</a>,
+<a href="#curl">curl</a>,
+<a href="#find">find</a>,
 
 
 <a id="curl"></a>
@@ -80,4 +81,11 @@ netsh interface portproxy delete v4tov4 listenaddress=192.168.1.8  listenport=33
 rem如果想查看已经配置了哪些端口转发，可以用如下语句：
 
 netsh interface portproxy show  v4tov4
+```
+
+<a id="find"></a>
+**find**
+```bash
+# remove error message during find ing
+find /code -name '*.jpg' 2>/dev/null
 ```

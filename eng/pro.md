@@ -16,6 +16,7 @@
 **as for**          ->至于
 **mandatory**       ->强制的，托管的  
 **precise**         ->精准的
+**episode**  		->插曲，一段情节
 
 
 ---
