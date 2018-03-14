@@ -98,3 +98,20 @@ function copy(o) {
 JSON.parse(JSON.stringify(cloneThis));
 
 ```
+
+#### set server environment PORT and NODE_ENV
+
+window:`set NODE_ENV=production && set PORT=7000 && node server.js`  
+linux:`NODE_ENV=production PORT=7000 node server.js`
+
+
+#### download file without 3rd part
+```js
+var http = require('http');
+var fs = require('fs');
+
+var file = fs.createWriteStream("file.jpg");
+var request = http.get("http://i3.ytimg.com/vi/J---aiyznGQ/mqdefault.jpg", function(response) {
+  response.pipe(file);
+});
+```

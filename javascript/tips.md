@@ -163,3 +163,7 @@ Object.assign(obj,{a:5}) //obj = {a:5,b:3}
 ```
 
 [es6](http://exploringjs.com/es6)
+
+
+#### test empty object  
+`Object.keys(obj).length === 0 && obj.constructor === Object`

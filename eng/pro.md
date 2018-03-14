@@ -1,4 +1,5 @@
 ### pro
+**host**            ->宿主
 **computer**        -> 实时计算            (value are computed)  
 **on demand**       -> 按需，一经要求       (product on demand)  
 **established**     ->已建立的             (tcp established)  
@@ -6,8 +7,7 @@
 **trunc**           ->截取尾部  
 **square**          ->平方  
 **coerce**          ->强迫，转换(implicitly converting)            (coerce symboles to strings)  
-**conjunction**     ->  
-**convery**         ->  
+**conjunction**     ->结合
 **distinguish**     ->区分  
 **transition to**   ->过渡   
 **wrapper**         ->封装  
@@ -17,6 +17,7 @@
 **mandatory**       ->强制的，托管的  
 **precise**         ->精准的
 **episode**  		->插曲，一段情节
+
 
 
 ---

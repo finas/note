@@ -13,3 +13,17 @@
 ```Dockerfile
 
 ```
+
+
+
+
+### get host's ip
+```js 
+//node
+ip = require('child_process')
+      .spawnSync('curl', ['ifconfig.io'])
+      .stdout
+      .toString()
+      .trim()
+
+```

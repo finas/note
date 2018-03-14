@@ -6,6 +6,7 @@
 <a href="#netsh">netsh</a>,
 <a href="#curl">curl</a>,
 <a href="#find">find</a>,
+<a href="alias">alias</a>,
 
 
 <a id="curl"></a>
@@ -88,4 +89,34 @@ netsh interface portproxy show  v4tov4
 ```bash
 # remove error message during find ing
 find /code -name '*.jpg' 2>/dev/null
+```
+
+<a id="alias"></a>
+**alias**
+```bash
+
+# add an alias permanently  which is stored in ~/.bashrc
+echo 'alias docker run -d -v /usr/code:/app $dockername node index.js' >> ~/.bashrc
+
+# find alias
+type --all $aliasName # type --all ls
+
+# multiple commands
+alias pl='pwd;ls'
+
+# MS-DOS like 
+alias dir="ls" 
+alias copy="cp" 
+alias rename="mv" 
+alias md="mkdir" 
+alias rd="rmdir" 
+alias del="rm -i"
+
+# useful
+
+alias ls ="ls -a" #include the hidden files
+alias df="df - h" #express the size as MB AND GB for better view
+alias rm="rm-i"   # more interactive
+alias cp="cp-i"   # the same as above 
+
 ```
