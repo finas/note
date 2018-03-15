@@ -1,5 +1,7 @@
 
-1. <a href="#curl">curl</a>,
+1. 
+<a href="<<"><<</a>,
+<a href="#curl">curl</a>,
 <a href="#netstat">netstat</a>,
 <a href="#ssh">ssh</a>,
 <a href="#virtualBox">virtualBox</a>,
@@ -8,6 +10,18 @@
 <a href="#find">find</a>,
 <a href="alias">alias</a>,
 
+
+<a id="<<"></a>
+*<<*
+```bash
+# << is known as here-document, delimiter is seen
+ wc << EOF
+> one two three
+> four five
+> EOF
+ 2  5 24
+```
+[sf](https://askubuntu.com/questions/678915/whats-the-difference-between-and-in-bash)
 
 <a id="curl"></a>
 *curl*

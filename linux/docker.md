@@ -27,3 +27,7 @@ ip = require('child_process')
       .trim()
 
 ```
+
+### remove images
++ remove specified `docker images -a | grep "pattern" | awk '{print $3}' | xargs docker rmi` 
++ remove all       `docker rmi $(docker images -a -q)`

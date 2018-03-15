@@ -1,5 +1,9 @@
 ### pro
-**host**            ->宿主
+**host**            ->宿主  
+**annotations**     ->注解  
+**prune**           ->删除，减少  
+**delimiter**       ->分隔符  \+ 
+**clause**          -> 条款  
 **computer**        -> 实时计算            (value are computed)  
 **on demand**       -> 按需，一经要求       (product on demand)  
 **established**     ->已建立的             (tcp established)  
@@ -16,7 +20,8 @@
 **as for**          ->至于
 **mandatory**       ->强制的，托管的  
 **precise**         ->精准的
-**episode**  		->插曲，一段情节
+**episode**  		->插曲，一段情节  
+**sniff**           ->嗅探  
 
 
 

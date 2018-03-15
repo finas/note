@@ -35,7 +35,7 @@ console.log(array1.reduce(reducer));
 ```
 
 
-#### What is my IP address
+### What is my IP address
 ```bash
 $ curl ifconfig.co
 47.91.179.51
@@ -59,7 +59,7 @@ $ http ifconfig.co/country-iso
 HK
 ```
 
-#### Cross-Domain Cookies
+### Cross-Domain Cookies
 ```php
 header("Access-Control-Allow-Origin: http://origin.domain:port");
 header("Access-Control-Allow-Credentials: true");
@@ -83,7 +83,7 @@ xhr.send(null);
 ```
 
 
-#### copy multi-dimensional array
+### copy multi-dimensional array
 ```js
 function copy(o) {
    var out, v, key;
@@ -99,13 +99,13 @@ JSON.parse(JSON.stringify(cloneThis));
 
 ```
 
-#### set server environment PORT and NODE_ENV
+### set server environment PORT and NODE_ENV
 
 window:`set NODE_ENV=production && set PORT=7000 && node server.js`  
 linux:`NODE_ENV=production PORT=7000 node server.js`
 
 
-#### download file without 3rd part
+### download file without 3rd part
 ```js
 var http = require('http');
 var fs = require('fs');
@@ -115,3 +115,16 @@ var request = http.get("http://i3.ytimg.com/vi/J---aiyznGQ/mqdefault.jpg", funct
   response.pipe(file);
 });
 ```
+
+### npm proxy set
+`npm config set proxy http://proxy.company.com:8080`  
+`npm config set https-proxy http://proxy.company.com:8080`  
+
+
+### `$` in bash
+```bash
+# $() means: "first evaluate this, and then evaluate the rest of the line".
+echo $(pwd)/myFile.txt
+echo /my/path/myFile.txt
+```
+
