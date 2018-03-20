@@ -128,3 +128,6 @@ echo $(pwd)/myFile.txt
 echo /my/path/myFile.txt
 ```
 
+
+### read json in nodejs  
+`var json_data = require('/path/to/local/file.json')`
