@@ -115,3 +115,6 @@ var request = http.get("http://i3.ytimg.com/vi/J---aiyznGQ/mqdefault.jpg", funct
   response.pipe(file);
 });
 ```
+
+#### git case care
+`git config core.ignorecase false`
