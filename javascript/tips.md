@@ -4,9 +4,6 @@
 Longhand:
 ```js
 for(let i=0;i<10000;i++){}
-```
-Shorthand:
-```js
 for(let i=0;i<1e7;i++){}
 ```
 
@@ -92,9 +89,6 @@ const arr3 = [...arrayLike];
 const obj = { foo: 'bar', baz: 42 }; 
 const map = new Map(Object.entries(obj));
 console.log(map); // Map { foo: "bar", baz: 42 }
-
-//pitfall
-
 ```
 
 #### Named parameters
@@ -131,20 +125,10 @@ const [{prop:x} = {prop:-1}] = [] //x = -1
 const [x=1] = [undefined]; // x = 1 
 const [{ prop: x=123 } = {}] = [{}] //x = 123
 
-
 // Array pattern only work with iterables
 const [x] = {x:1} // Type Error, empty objects are not iterable 
-
 ```
 
-#### new Math methods
-
-```js
-Math.truc(-3.9) //-3
-Math.hypot(3,4) //5
-Math.sign(-8)  //-1 to be indicated positive ,negative or zero
-
-```
 
 #### new others
 ```js
@@ -155,10 +139,8 @@ const obj = {
 }
 obj.hello() // hello
 
-
 Object.assign(obj={a:1},{a:2,b:3}) //obj = {a:2,b:3}
 Object.assign(obj,{a:5}) //obj = {a:5,b:3}
-
 //Typed Arrays for JPEG SOF0 decoder 
 ```
 
@@ -167,3 +149,23 @@ Object.assign(obj,{a:5}) //obj = {a:5,b:3}
 
 #### test empty object  
 `Object.keys(obj).length === 0 && obj.constructor === Object`
+
+### overwrite
+```js
+(function() {
+    var proxied = window.XMLHttpRequest.prototype.open;
+    window.XMLHttpRequest.prototype.open = function() {
+        console.log( arguments );
+        return proxied.apply(this, [].slice.call(arguments));
+    };
+})();
+(function(){
+    var originWS = WebSocket
+    WebSocket = function(url){
+        if(flag){
+            // ....
+        }
+        return new originWS(url)
+    }
+})
+```
