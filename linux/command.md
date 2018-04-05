@@ -29,8 +29,11 @@
 #test my socks5 server status
 curl --socks5-hostname [protocal]:[ip:port] http://www.baidu.com/s?wd=ip -v -i
 
+#get reponse header params
 curl --head https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.js | \
     grep -i "access-control-allow-origin"
+
+curl -sSL -D - www.acooke.org -o /dev/null
 
 #--socks5 :use the socks5 proxy
 #--socks5-hostname : resolve the DNS on the other side

@@ -169,3 +169,28 @@ Object.assign(obj,{a:5}) //obj = {a:5,b:3}
     }
 })
 ```
+
+
+### retry promise
+```js
+function retry(pFunc,tryTime=1){
+    let time = 1
+    return function(...ars){
+        return new Promise((r,j)=>{
+            (function _retry(){
+                return pFunc.apply(null,ars).catch(e=>{
+                    if(time<tryTime){
+                        time++
+                        return _retry()  
+                    }
+                    j(e)
+                }).then(e=>r(e))
+            })()
+        })
+    }
+}
+```
+
+### Running NodeJs http-server forever with PM2
+`which http-server`  
+`pm2 start /usr/bin/http-server --name my-file-server -- -p 8080 -d false`  

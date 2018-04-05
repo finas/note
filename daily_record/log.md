@@ -133,3 +133,10 @@ echo /my/path/myFile.txt
 
 ### read json in nodejs  
 `var json_data = require('/path/to/local/file.json')`
+
+### get only response header from curl
+`curl -v   https://www.bilibili.com -o /dev/null`
+
+
+### listen to nat port  
+`app.listen(3000,'192.168.0.1')`
