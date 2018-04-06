@@ -35,53 +35,6 @@ console.log(array1.reduce(reducer));
 ```
 
 
-### What is my IP address
-```bash
-$ curl ifconfig.co
-47.91.179.51
-
-$ http -b ifconfig.co
-47.91.179.51
-
-$ wget -qO- ifconfig.co
-47.91.179.51
-
-$ fetch -qo- https://ifconfig.co
-47.91.179.51
-
-$ bat -print=b ifconfig.co/ip
-47.91.179.51
-
-$ http ifconfig.co/country
-Hong Kong
-
-$ http ifconfig.co/country-iso
-HK
-```
-
-### Cross-Domain Cookies
-```php
-header("Access-Control-Allow-Origin: http://origin.domain:port");
-header("Access-Control-Allow-Credentials: true");
-header("Access-Control-Allow-Methods: GET, POST");
-header("Access-Control-Allow-Headers: Content-Type, *");
-```
-```js
-type: "get",
-url: link,
-crossDomain: true,
-dataType: 'json',
-xhrFields: {
-  withCredentials: true
-}
-
-
-var xhr = new XMLHttpRequest();
-xhr.open('GET', 'http://example.com/', true);
-xhr.withCredentials = true;
-xhr.send(null);
-```
-
 
 ### copy multi-dimensional array
 ```js
@@ -139,4 +92,10 @@ echo /my/path/myFile.txt
 
 
 ### listen to nat port  
-`app.listen(3000,'192.168.0.1')`
+`app.listen(3000,'192.168.0.1')`  
+
+### http auth  
+401 no authorized  
+
+### uri url urn  
+uri (Uniform Resource Locator ) contains:url,urn

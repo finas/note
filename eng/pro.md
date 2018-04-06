@@ -4,6 +4,7 @@
 **revoke**          ->撤销    
 **directive**       ->指令  
 **caveat**          ->警告  
+**escape**          ->编码  
 **prune**           ->删除，减少  
 **stuff**           ->填充物  
 **boilerplate**		->模板文件
@@ -48,6 +49,7 @@
 **convention**      ->会议，约定  
 **Errata**          ->勘误表  
 **Acknowledgement** ->感谢名单  
+**Definitive Guides**->权威指南  
 
 ---
 
@@ -69,14 +71,16 @@
 **unintuitive**     ->直觉性  
 **overlook**        ->忽视
 **ubiquitous**      ->普及  
-**mustache**		->
+**mustache**		->  
+**finer-grained**   ->颗粒度   
 
 ---  
 
 
 ### other phrases
 
-**favor mainstream over elegance**
+**favor mainstream over elegance**  
+**general-purpose**
 
 
 ### programming only

@@ -1,39 +1,65 @@
-
-# addEventListener VS onclick
-
 #### QA
-1. which phase capturing or bubbling does onclick work on ?
-2. caniuse neither of them in any siutation ?
+1. which phase capturing or bubbling does onclick work on ?  
+2. compare `window.onerror` with `window.addEventListener('error',handler)`
 3. what's diffirent between `document.ondomcontentready` and `document.addEventListener('DOMContentLoaded')`
+4. what's the listener call order when there is multi listeners ?
+## addEventListener  
 
-## `element.addEventListener()`
+### `target.addEventListener(type, listener[, useCapture])`
 
-`element.addEventListener()` has multiple advantages:
+Each handler can access event object properties:
 
-+ Allows you to register unlimited events handlers and remove them with `element.removeEventListener()`.
-+ Has `useCapture` parameter, which indicates whether you'd like to handle event in its **capturing or bubbling phase**.
-+ Cares about **semantics**. Basically, it makes registering event handlers more explicit. For a beginner, a function call makes it obvious that something happens, whereas assigning event to some property of DOM element is at least not intuitive.
-+ Allows you to **separate document structure (HTML) and logic (JavaScript).** In tiny web applications it may not seem to matter, but it does matter with any bigger project. It's way much easier to maintain a project which separates structure and logic than a project which doesn't.
-+ Eliminates confusion with correct event names. Due to using inline event listeners or assigning event listeners to .onevent properties of DOM elements, lots of inexperienced JavaScript programmers thinks that the event name is for example `onclick` or `onload`. on is **not a part of event name**. Correct event names are click and load, and that's how event names are passed to `.addEventListener()`.
-+ Works in almost all browser. If you still have to support IE <= 8, you can use a polyfill from MDN.
-
-
-## `element.onevent = function() {} (e.g. onclick, onload)`
-
-This was a way to register event handlers in DOM 0. It's now discouraged, because it:
-
-+ Allows you to register **only one** event handler. Also removing the assigned handler is not intuitive, because to remove event handler assigned using this method, you have to revert `onevent` property back to its initial state (i.e. `null`).
-+ Doesn't **respond to errors** appropriately. For example, if you by mistake assign a string to window.onload, for example: window.onload = "test";, it won't throw any errors. Your code wouldn't work and it would be really hard to find out why. `.addEventListener()` however, would throw error (at least in Firefox): TypeError: Argument 2 of EventTarget.addEventListener is not an object.
-+ Doesn't provide a way to choose if you want to handle event in its capturing or bubbling phase.
++ event.target – the deepest element that originated the event.
++ event.currentTarget (=this) – the current element that handles the event (the one that has the handler on it)
++ event.eventPhase – the current phase (capturing=1, bubbling=3).  
+```js
+div.onclick=e=>console.log(e.target,e.currentTarget,e.eventPhase)
+span2.click()
+//<span id="span2">
+//<div id="div">
+//3
+```
+**Note**: For event listeners attached to the event target, the event is in the **target phase**, rather than the **capturing** and **bubbling phases**. Events in the target phase will trigger all listeners on an element in the order they were **registered**, regardless of the useCapture parameter.
 
 
+### `stopPropagation`and `stopImmediatePropagation`  
+*`stopImmediatePropagation` stop all listener binded after it*  
+1. *`event.target==event.currentTarget`*  
+if every bind listener do not invoke `stopImmediatePropagation`,the invoke order will be same as bind order ignore useCapture.
+```js
+div.onclick=async(e)=>{
+    e.stopPropagation() //this do not work
+    //e.stopImmediatePropagation() // this will block all below listeners
+    console.log('click1')
+}
+div.addEventListener('click',e=>{console.log('click_bubble');},false)
+div.addEventListener('click',e=>{console.log('click_caputre');},true)
+div.click()
+//click1
+//click_caputre
+//click_bubble
+```
+2. *`event.target!=event.currentTarget`*  
+capture handler will invoked as the bind order first then the bubble,`stopPropagation` will block the bubble handler,but  `stopImmediatePropagation` will block the follow handler include capture handler.
+```js
+div.onclick=async(e)=>{
+    e.stopPropagation() //this do not work
+    //e.stopImmediatePropagation() // this will block all below listener
+    console.log('click1')
+}
+div.addEventListener('click',e=>{console.log('click_caputre');e.stopPropagation();},true)
+div.addEventListener('click',e=>{console.log('click_caputre2');e.stopImmediatePropagation()},true)
+div.addEventListener('click',e=>{console.log('click_caputre3');},true)
+div.addEventListener('click',e=>{console.log('click_bubble');e.stopPropagation();},false)
+span2.click()
+//click_capture
+//click_captur2
+```
+
+#### pending
+1. DOM element,HTML element  
+2. Adding a listener during event dispatch  
 
 
-## extra
-the DOM "load" event still does only work very limited. That means it'll only fire for the `window object`, `images` and `<script>` elements for instance. The same goes for the direct onload assignment. There is no technical difference between those two. Probably `.onload =` has a better cross-browser availabilty.
 
-However, you cannot assign a `load event` to a `<div>` or `<span>` element or whatnot.
-
-
-
-[stackoverflow](https://stackoverflow.com/questions/6348494/addeventlistener-vs-onclick)
+ [onerror](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onerror)

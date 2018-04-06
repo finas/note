@@ -40,6 +40,46 @@
 `sudo update-rc.d -f foobar remove`　　#开机时不启动   
 
 
+7. **set http auth for nginx**  
+`# printf "ttlsa:$(openssl passwd -crypt 123456)\n" >>conf/htpasswd`  
+`# cat conf/htpasswd `  
+`ttlsa:xyJkVhXGAZ8tM`  
 
+```
+# /etc/nginx/nginx.conf
+    location /{
+        auth_basic "nginx basic http test for ttlsa.com";
+        auth_basic_user_file conf/htpasswd; 
+        autoindex on;
+    }
+```
+
+
+8 **What is my IP address**
+```bash
+$ curl ifconfig.co
+47.91.179.51
+
+$ http -b ifconfig.co
+47.91.179.51
+
+$ wget -qO- ifconfig.co
+47.91.179.51
+
+$ fetch -qo- https://ifconfig.co
+47.91.179.51
+
+$ bat -print=b ifconfig.co/ip
+47.91.179.51
+
+$ http ifconfig.co/country
+Hong Kong
+
+$ http ifconfig.co/country-iso
+HK
+```
+
+### covert stdout to args
+`echo "console.log(encodeURI('http://www.baidu.com?t=sdf 12'))"|node|xargs http GET --print=hHb`
 
 

@@ -7,3 +7,8 @@ let buffer = await request.get({
 });
 Iconv.decode(buffer,'gbk')
 ```
+
+
+### Running NodeJs http-server forever with PM2
+`which http-server`  
+`pm2 start /usr/bin/http-server --name my-file-server -- -p 8080 -d false`  
