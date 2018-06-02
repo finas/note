@@ -10,7 +10,7 @@ A value of -1 will disable caching, requiring a **preflight** OPTIONS check for 
 
 
 
-## End-to-end Hop-by-hpy
+## End-to-end Hop-by-hop
 
 + End-to-end 端到端头部
 
@@ -21,13 +21,12 @@ A value of -1 will disable caching, requiring a **preflight** OPTIONS check for 
 
     此类头部字段只对单次转发有效。会因为转发给缓存/代理服务器而失效。
     HTTP 1.1 版本之后，如果要使用Hop-by-hop头部字段则需要提供Connection字段。
-    除了一下8个字段为逐跳字段，其余均为端到端字段。
+    除了以下字段为逐跳字段，其余均为端到端字段。
     + Connection
     + Keep-Alive
-    + Proxy-Authenticate
+    + Proxy-Connection
     + Proxy-Authenrization
     + Trailer
-    + TE
     + Tranfer-Encoding
     + Upgrade
 

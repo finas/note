@@ -15,6 +15,18 @@
 ```
 
 
+### access host machine from docker container
+1. set up a docker network  
+`docker network create -d bridge --subnet 192.168.0.0/24 --gateway 192.168.0.1 dockernet`
+2. list the created network  `docker network ls`
+3. make sure container to that 'dockernet' with `--net=dockernet`
+ 
+##### OR  
+you want to reach your host machine as 'localhost'  
+`docker run --add-host="localhost:192.168.65.1"  
+`192.168.65.1` is output by `route|awk '/^default/{print $2}'`
+
+
 
 
 ### sync the time zone in docker with host
@@ -54,3 +66,8 @@ docker run --detach \
     -v /data/staticserver/logs:/var/log/nginx:rw \
     -d nginx
 ```
+
+
+## Q&&A
+1.find the str in docker logs  
+`docker logs nginx 2>&1 | grep "127." `
