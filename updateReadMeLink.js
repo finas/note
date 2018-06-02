@@ -1,6 +1,6 @@
 (function () {
     const test = true
-    const relativePath = test ? 'd:/code/sharing' : '.'
+    const relativePath = test ? './' : '.'
     const rp = function (path) {
         return require('path').resolve(relativePath, path)
     }

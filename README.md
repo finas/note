@@ -5,6 +5,7 @@
 
 <!-- START_PROJECT_STRUCTURE -->
 <pre>
+|   .README.md.swp
 |   <a href="./board.md">board.md</a>
 |   <a href="./README.md">README.md</a>
 |   <a href="./term.md">term.md</a>
@@ -75,6 +76,7 @@
 +---javascript
 |   |   <a href="./javascript/node_tips.md">node_tips.md</a>
 |   |   <a href="./javascript/react.md">react.md</a>
+|   |   <a href="./javascript/regex.md">regex.md</a>
 |   |   <a href="./javascript/snippet.md">snippet.md</a>
 |   |   <a href="./javascript/tips.md">tips.md</a>
 |   +---browser
@@ -98,6 +100,8 @@
 |       <a href="./pitfall/encodeURI_encodeURIComponent.md">encodeURI_encodeURIComponent.md</a>
 +---proxy
 |       <a href="./proxy/readme.md">readme.md</a>
++---secure
+|       <a href="./secure/ssh.md">ssh.md</a>
 +---tips
 |   |   <a href="./tips/git.md">git.md</a>
 |   |   <a href="./tips/puppeteer.md">puppeteer.md</a>

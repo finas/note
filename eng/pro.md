@@ -87,6 +87,7 @@
 
 **favor mainstream over elegance**  :偏爱主流而不是优雅  
 **general-purpose** :通用  
+**base off**    ->基于
 
 
 ### programming only
