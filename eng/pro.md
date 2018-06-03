@@ -40,6 +40,8 @@
 **derived**         ->派生 
 **encapusulation**  ->分装  
 **scrubble**        ->擦洗  
+**convention**      ->惯例  
+
 
 ---
 
@@ -54,7 +56,6 @@
 **Errata**          ->勘误表  
 **acknowledgement** ->感谢名单  
 **Definitive Guides**->权威指南  
-
 ---
 
 ### other words 

@@ -83,3 +83,8 @@ HK
 `echo "console.log(encodeURI('http://www.baidu.com?t=sdf 12'))"|node|xargs http GET --print=hHb`
 
 
+### download files from a   
+`wget -i your_list`
+
+
+### read-file-into-array
