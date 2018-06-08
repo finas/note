@@ -5,7 +5,7 @@
 
 10. press `c-v` in vim enter visual block then do the multi select  
 
-11. `xargs` convert stdout to argus `ls |xargs echo ` 
+11. `xargs` convert stdout to args `ls |xargs echo ` 
 
 12. There may be some relations between `ls|wc|xargs` and `fetch(url).then(getResponse).then(handleData)`  
 
@@ -23,3 +23,11 @@
 8. 30-seconds-of-code了解下[git](https://github.com/Chalarangelo/30-seconds-of-code#ary)
 9. linux redirect 了解下 [link1](https://www.digitalocean.com/community/tutorials/an-introduction-to-linux-i-o-redirection),[link2](https://stackoverflow.com/questions/6674327/redirect-all-output-to-file),[link3](https://www.tldp.org/LDP/abs/html/io-redirection.html),[link4](https://ryanstutorials.net/linuxtutorial/piping.php)  
 10. 微信开发 了解下 [test](https://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/index), [sf](https://segmentfault.com/a/1190000009045051)
+11. Greedy`/.+/` match as many as possible and lazy`/.+?/` as few as possible [tutorial](https://javascript.info/regexp-greedy-and-lazy) 
+12. `encodeURIComponent` will encode `=`,so encode `value` not `key=value` when encode path  
+13. server return `304` when request  `If-Modified-Since`<= response `Last-Modified` and request  `If-None-Match` `==` response `ETag`
+14. `Promise.reject(1).then(console.log).catch(console.error).then(3=>console.info(3))`
+15. use `ln -s /usr/code/node_modules /node_modules` for simply require
+16. use `who` ,`last` to get all logined user
+17. package-lock.json  
+18. [X-Forwarded-For](https://imququ.com/post/x-forwarded-for-header-in-http.html), [IP Transparency with nginx](https://www.nginx.com/blog/ip-transparency-direct-server-return-nginx-plus-transparent-proxy/)
