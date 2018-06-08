@@ -8,7 +8,7 @@
 **prune**           ->删除，减少  
 **stuff**           ->填充物  
 **boilerplate**		->模板文件
-**delimiter**       ->分隔符  \+  
+**delimiter**       ->分隔符    
 **clause**          -> 条款  
 **computer**        -> 实时计算            (value are computed)  
 **on demand**       -> 按需，一经要求       (product on demand)  
@@ -34,7 +34,8 @@
 **fun-tuned**       ->
 **synopsis**        -> 概要  
 **candidate**       ->  
-**evasion**         ->逃避  
+**evasion**         ->逃避    
+**currency**		->货币；通货.   
 
 
 ---
