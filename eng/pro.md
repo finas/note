@@ -42,7 +42,12 @@
 **defer**           ->推迟  
 **derived**         ->派生 
 **encapusulation**  ->分装  
-**scrubble**        ->擦洗  
+**scrubble**        ->擦洗   
+**fatal**			->致命的，重大的  
+**allocation**		->  
+**stack**			->  
+**heap**			->  
+
 
 ---
 
