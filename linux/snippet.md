@@ -1,7 +1,7 @@
 ## snippet
 
 
-`cal`,`uname`
+`cal`,`uname`,`lsb_release -a`
 
 1. **search `history` command**  
 *press "CTRL+R" to search ,also support autofill*  

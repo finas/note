@@ -46,7 +46,14 @@
 **fatal**			->致命的，重大的  
 **allocation**		->  
 **stack**			->  
-**heap**			->  
+**heap**			->    
+**bypass**			->绕过  
+**censorship**      ->审查  
+**detached**		->分离的，脱节的。  
+**circumvent** 		->规避。  
+**malicious**		->恶毒。 
+
+
 
 
 ---
