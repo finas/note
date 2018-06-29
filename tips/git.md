@@ -6,7 +6,13 @@
 
 获取git 的url
 
-``` git remote -v```
+``` git remote -v```  
+
+查看文件的log修改。
+```git log -p --  path/file ```  
+
+查看文件的reflog
+`git rev-list --all --remotes --pretty=oneline foo.txt`  
 
 
 修改remote的url
@@ -28,6 +34,10 @@ git别名
     git remote -v
     git remote set-url origin git@test.com
 
+diff 不同的分支  
+`git diff ..branchname path/to/file`  
+`git diff mybranch master -- myfile.css`  
+
 找回删除的文件
 ```bash
     git rev-list -n 1 HEAD -- <file_path>  # find last file commit id
@@ -39,6 +49,8 @@ git别名
     git log --diff-filter=D --summary # filter the delete log
 ```
 
+设置pull rebase
+`git config pull.rebase true`  
 
 回滚到指定的版本
 

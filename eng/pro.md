@@ -52,7 +52,9 @@
 **detached**		->分离的，脱节的。  
 **circumvent** 		->规避。  
 **malicious**		->恶毒。 
-
+**conjunction** 	->关联。
+**change**			->零钱。  
+**dive into**		->投入，潜入深海。
 
 
 

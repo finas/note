@@ -179,3 +179,24 @@ var blob = dataURItoBlob(dataURL);
 var fd = new FormData(document.forms[0]);
 fd.append("canvasImage", blob);
 ```
+
+### listener for url history change
+var originPushState = Object.getPrototypeOf(history).pushState
+window.history.pushState = function(){
+  // do something
+  return originPushState.apply(window.history,arguments)
+}
+
+// listener for popstate event
+window.onpopstate = function(e){
+  
+}
+
+### initialize midnight  
+```js
+var d = new Date()
+d.setHours(0,0,0) // last midnight zero time in today 
+d.setHours(24,0,0,0)  // next midnight  
+
+//work in UTC time, use setUTCHours
+```
