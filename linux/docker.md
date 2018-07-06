@@ -71,3 +71,8 @@ docker run --detach \
 ## Q&&A
 1.find the str in docker logs  
 `docker logs nginx 2>&1 | grep "127." `
+
+
+## flag  
+1.restart when reboot  
+`--restart=unless-stopped`  

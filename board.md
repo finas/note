@@ -45,3 +45,5 @@
 28. `sudo chown -R group:user folder` change the folder user group.   
 29. `unable to access 'https://github.com/xxxx/xxx.git': Failed to connect to 127.0.0.1 port 8087: Connection refused` may related to system http proxy `env|grep -i proxy`      
 30. use `git patch` cherry pick only one file  `git diff <branch>..<other-branch> --<fileName> |git apply`  
+31. `docker update --restart=no my-container` to update the running container flag  
+32. 

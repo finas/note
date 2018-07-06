@@ -77,3 +77,64 @@ new function(){ /* code */ }() // Only need parens if passing arguments
 
 ### ref
 <a href="http://benalman.com/news/2010/11/immediately-invoked-function-expression/">http://benalman.com/news/2010/11/immediately-invoked-function-expression/</a>
+
+### ie
+```html
+<!-- IE 8 or below -->   
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css"  href="/Resources/css/master1300.css" />        
+<![endif]-->
+<!-- IE 9 or above -->
+<!--[if gte IE 9]>
+<link rel="stylesheet" type="text/css" media="(max-width: 100000px) and (min-width:481px)"
+    href="/Resources/css/master1300.css" />
+<link rel="stylesheet" type="text/css" media="(max-width: 480px)"
+    href="/Resources/css/master480.css" />        
+<![endif]-->
+<!-- Not IE -->
+<!-- [if !IE] -->
+<link rel="stylesheet" type="text/css" media="(max-width: 100000px) and (min-width:481px)"
+    href="/Resources/css/master1300.css" />
+<link rel="stylesheet" type="text/css" media="(max-width: 480px)"
+    href="/Resources/css/master480.css" />
+<!-- [endif] -->
+```
+```js
+function isIE () {
+  var myNav = navigator.userAgent.toLowerCase();
+  return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
+}
+if (isIE () && isIE () < 9) {
+ // is IE version less than 9
+} else {
+ // is IE 9 and later or not IE
+}
+```
+
+
+### nginx map -> split log
+```
+http {
+
+    map $status $normal {
+        ~^2  1;
+        default 0;
+    }
+    map $status $abnormal {
+        ~^2  0;
+        default 1;
+    }
+    map $remote_addr $islocal {
+        ~^127  1;
+        default 0;
+    }
+
+    server {
+
+        access_log logs/access.log combined if=$normal;
+        access_log logs/access_abnormal.log combined if=$abnormal;
+        access_log logs/access_local.log combined if=$islocal;
+
+    }  
+}
+```

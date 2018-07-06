@@ -54,8 +54,10 @@
 **malicious**		->恶毒。 
 **conjunction** 	->关联。
 **change**			->零钱。  
-**dive into**		->投入，潜入深海。
-
+**dive into**		->投入，潜入深海。  
+**bio**				->个人简历。
+**failover**  ->故障转移  
+**migrate** ->迁移  
 
 
 ---
