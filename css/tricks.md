@@ -28,5 +28,7 @@
 }
 ```
 
+5.fix the translate3d blur .   
+`translateX(calc(-50% + 0.5px))`
 
 

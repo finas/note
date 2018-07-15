@@ -2,6 +2,8 @@
 ### imo     => in my opinion
 ### RC car  => remote control car  
 ### WDS     => wireless distribution system  
+### LTD     => limitted. 
+### bio.    => 
 ### 
 
 
@@ -15,3 +17,4 @@ LMAO => laugh my ass off
 ROFL => rolling on floor laugh  
 bd => backdoor   
 
+y

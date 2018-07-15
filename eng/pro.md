@@ -33,14 +33,31 @@
 **raven**           ->哨兵  
 **fun-tuned**       ->  
 **synopsis**        -> 概要  
+**candidate**       ->  
+**evasion**         ->逃避    
+**currency**		->货币；通货.   
 **candidate**       ->求职申请人；选举候选人   
 **evasion**         ->逃避  
 **concurrent**      ->并行  
 **defer**           ->推迟  
 **derived**         ->派生 
 **encapusulation**  ->分装  
-**scrubble**        ->擦洗  
-**convention**      ->惯例  
+**scrubble**        ->擦洗   
+**fatal**			->致命的，重大的  
+**allocation**		->  
+**stack**			->  
+**heap**			->    
+**bypass**			->绕过  
+**censorship**      ->审查  
+**detached**		->分离的，脱节的。  
+**circumvent** 		->规避。  
+**malicious**		->恶毒。 
+**conjunction** 	->关联。
+**change**			->零钱。  
+**dive into**		->投入，潜入深海。  
+**bio**				->个人简历。
+**failover**  ->故障转移  
+**migrate** ->迁移  
 
 
 ---

@@ -138,13 +138,65 @@ const escapeHTML = str =>
 var arr = [];
 for(var i=0;i<256;i++) {
   var char=String.fromCharCode(i);
-  if(encodeURI(char)!==encodeURIComponent(char)) {
+  if(encodeURI(char)!==encodeURIComponent(char)||escape(char)!==encodeURI(char)) {
     arr.push({
       character:char,
+      escape:escape(char),
       encodeURI:encodeURI(char),
-      encodeURIComponent:encodeURIComponent(char)
+      encodeURIComponent:encodeURIComponent(char),
+      charCode:i
     });
   }
 }
 console.table(arr);
+```
+
+### dataURI to a Blob
+```js
+function dataURItoBlob(dataURI) {
+    // convert base64/URLEncoded data component to raw binary data held in a string
+    var byteString;
+    if (dataURI.split(',')[0].indexOf('base64') >= 0)
+        byteString = atob(dataURI.split(',')[1]);
+    else
+        byteString = unescape(dataURI.split(',')[1]);
+
+    // separate out the mime component
+    var mimeString = dataURI.split(',')[0].split(':')[1].split(';')[0];
+
+    // write the bytes of the string to a typed array
+    var ia = new Uint8Array(byteString.length);
+    for (var i = 0; i < byteString.length; i++) {
+        ia[i] = byteString.charCodeAt(i);
+    }
+
+    return new Blob([ia], {type:mimeString});
+}
+
+// eg
+var dataURL = canvas.toDataURL('image/jpeg', 0.5);
+var blob = dataURItoBlob(dataURL);
+var fd = new FormData(document.forms[0]);
+fd.append("canvasImage", blob);
+```
+
+### listener for url history change
+var originPushState = Object.getPrototypeOf(history).pushState
+window.history.pushState = function(){
+  // do something
+  return originPushState.apply(window.history,arguments)
+}
+
+// listener for popstate event
+window.onpopstate = function(e){
+  
+}
+
+### initialize midnight  
+```js
+var d = new Date()
+d.setHours(0,0,0) // last midnight zero time in today 
+d.setHours(24,0,0,0)  // next midnight  
+
+//work in UTC time, use setUTCHours
 ```

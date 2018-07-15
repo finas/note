@@ -30,4 +30,20 @@
 15. use `ln -s /usr/code/node_modules /node_modules` for simply require
 16. use `who` ,`last` to get all logined user
 17. package-lock.json  
+
 18. [X-Forwarded-For](https://imququ.com/post/x-forwarded-for-header-in-http.html), [IP Transparency with nginx](https://www.nginx.com/blog/ip-transparency-direct-server-return-nginx-plus-transparent-proxy/)
+19. [git ignore case default](https://stackoverflow.com/questions/52950/how-to-make-git-ignore-changes-in-case?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+) `git config --global core.ignorecase true`. 
+20. [os x locale is not set UTF-8] `locale`  `export LC_ALL=en_US.UTF-8 export LANG=en_US.UTF-8` or add `~/.bash_profile` then `source ~/.bash_profile`
+21. `w !sudo tee %` `:w #write a file` `!sudo #call shell sudo command` `tee # the output of vi/vim` `% #trigger the use of current fielname`  
+22. [set up a clean utf8 linux](https://perlgeek.de/en/article/set-up-a-clean-utf8-environment)   
+23. override `pushState` and listener for onPopState can watch the url history change. [url](./javascript/snippet.md)
+24. `echo 0 >/proc/sys/net/ipv4/icmp_echo_ignore_all` for temp allow or append `net.ipv4.icmp_echo_ignore_all=1` to `/etc/sysctl.conf` for save to disk  
+25. **Data URLS**, URLs prefixed with the `data:` scheme,allow content creators to embed small files inline in documents.  [mdn](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs)
+26. `tail -n 20 /var/log/nginx/error.log` to find nginx problem.   
+27. `cat ~/.ssh/id_rsa.pub | ssh username@hostname ' cat >>.ssh/authorized_keys'`  copy public key to server `authorized_key`. 
+28. `sudo chown -R group:user folder` change the folder user group.   
+29. `unable to access 'https://github.com/xxxx/xxx.git': Failed to connect to 127.0.0.1 port 8087: Connection refused` may related to system http proxy `env|grep -i proxy`      
+30. use `git patch` cherry pick only one file  `git diff <branch>..<other-branch> --<fileName> |git apply`  
+31. `docker update --restart=no my-container` to update the running container flag  
+32. 
