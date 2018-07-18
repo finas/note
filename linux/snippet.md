@@ -86,3 +86,8 @@ HK
 1. specify the sperator  use `-F`  
 `awk -F: '{print $1}' /etc/passwd`  
 
+### download files from a   
+`wget -i your_list`
+
+
+### read-file-into-array
