@@ -80,6 +80,9 @@ HK
 ```
 
 ### covert stdout to args
-`echo "console.log(encodeURI('http://www.baidu.com?t=sdf 12'))"|node|xargs http GET --print=hHb`
+`echo "console.log(encodeURI('http://www.baidu.com?t=sdf 12'))"|node|xargs http GET --print=hHb`  
 
+### awk
+1. specify the sperator  use `-F`  
+`awk -F: '{print $1}' /etc/passwd`  
 

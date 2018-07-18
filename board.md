@@ -45,5 +45,7 @@
 28. `sudo chown -R group:user folder` change the folder user group.   
 29. `unable to access 'https://github.com/xxxx/xxx.git': Failed to connect to 127.0.0.1 port 8087: Connection refused` may related to system http proxy `env|grep -i proxy`      
 30. use `git patch` cherry pick only one file  `git diff <branch>..<other-branch> --<fileName> |git apply`  
-31. `docker update --restart=no my-container` to update the running container flag  
-32. 
+31. `docker update --restart=no my-container` to update the running container flag    
+32.  `require`,the path is relative to that source file(NOT root directory),`fs`,the pat is relative to `process.cwd()`(NOT that source file)  .You should use `path.resolve(__dirname,'../other/module.js')`  
+33. `gitk --all file` will show the all history of the file  `git checkout -p ` give you a change to checkout each hun individually  
+34. `grep --color -R --exclude-dir=node_modules '\.js"\ ` to find

@@ -200,3 +200,9 @@ d.setHours(24,0,0,0)  // next midnight
 
 //work in UTC time, use setUTCHours
 ```
+
+### number to hexadecimal  
+convert a number to a hexadecimal  
+`hexString = number.toString(16)`  
+reverse the process  
+`number = parseInt(hexString,16)`  

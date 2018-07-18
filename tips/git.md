@@ -15,6 +15,12 @@
 `git rev-list --all --remotes --pretty=oneline foo.txt`  
 
 
+查看文件的所有的修改记录。
+`git log --all -p file`  
+
+找到那个分支含有指定的commitid  
+`git branch --contains <commit> `  
+
 修改remote的url
 
 ``` git remote set-url origin <url> ```
