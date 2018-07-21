@@ -48,4 +48,9 @@
 31. `docker update --restart=no my-container` to update the running container flag    
 32.  `require`,the path is relative to that source file(NOT root directory),`fs`,the pat is relative to `process.cwd()`(NOT that source file)  .You should use `path.resolve(__dirname,'../other/module.js')`  
 33. `gitk --all file` will show the all history of the file  `git checkout -p ` give you a change to checkout each hun individually  
-34. `grep --color -R --exclude-dir=node_modules '\.js"\ ` to find
+34. `grep --color -R --exclude-dir=node_modules '\.js"\ ` to find  
+35. If the request method is `GET` or `HEAD`, `XMLHttpRequest` will ignore request body .  
+36. `curl -v -H "Accept: application/json"  https://httpbin.org/get` will see the request header and body
+37. `git show branch:file`  
+38. `require` vs `import` [link](http://www.cnblogs.com/unclekeith/p/7679503.html)  
+39. `204 No Content` is meant to say there is no body to return  

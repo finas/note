@@ -206,3 +206,40 @@ convert a number to a hexadecimal
 `hexString = number.toString(16)`  
 reverse the process  
 `number = parseInt(hexString,16)`  
+
+
+
+### Class base Prototype  
+```js
+function Toast(option){
+   if(!(this instanceof Toast)){
+    throw new Error('Toast instantiation error');
+  }
+  this.prompt = '';
+  this.elem = null;
+  this.init(option);
+}
+
+Toast.prototype = {
+  // 构造器
+  constructor: Toast,
+  // 初始化方法
+  init: function(option){
+    this.prompt = option.prompt || '';
+    this.render();
+    this.bindEvent();
+  },
+  // 显示
+  show: function(){
+    this.changeStyle(this.elem, 'display', 'block');
+  },
+  // 改变样式
+  changeStyle: function(node, key, value){
+      node.style[key] = value;
+  }
+};
+
+var T = new Toast({prompt:'I\'m Toast!'});
+T.show();
+
+```
