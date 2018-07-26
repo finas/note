@@ -54,3 +54,5 @@
 37. `git show branch:file`  
 38. `require` vs `import` [link](http://www.cnblogs.com/unclekeith/p/7679503.html)  
 39. `204 No Content` is meant to say there is no body to return  
+40. `curl http://www.vdberg.org/~richard/tcpping -o tcpping ` to download tcpping
+41. `cat foo.c | sed '/^\s*#/d;/^\s*$/d' | wc -l` to count-non-blank-lines-of-code-in-bash  
