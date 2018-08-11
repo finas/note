@@ -25,6 +25,9 @@
 
 ``` git remote set-url origin <url> ```
 
+git 给shell 别名   
+`upstream-merge = !"git fetch origin -v && git fetch upstream -v && git merge upstream/master && git push"`    
+
 git别名
 
 ``` git config --global alias.<handle> <command> ```

@@ -40,29 +40,33 @@
 **evasion**         ->逃避  
 **concurrent**      ->并行  
 **defer**           ->推迟  
-**derived**         ->派生 
+**derived**         ->派生   
 **encapusulation**  ->分装  
 **scrubble**        ->擦洗   
 **fatal**			->致命的，重大的  
 **allocation**		->  
 **stack**			->  
 **heap**			->    
-**bypass**			->绕过  
-**censorship**      ->审查  
-**detached**		->分离的，脱节的。  
-**circumvent** 		->规避。  
-**malicious**		->恶毒。 
-**conjunction** 	->关联。
+**bypass**			->绕过    
+**censorship**      ->审查    
+**detached**		->分离的，脱节的。    
+**circumvent** 		->规避。    
+**malicious**		->恶毒。   
+**conjunction** 	->关联。  
 **change**			->零钱。  
 **dive into**		->投入，潜入深海。  
 **bio**				->个人简历。
 **failover**  ->故障转移  
 **migrate** ->迁移  
+**malicious**   ->恶毒  
+**tampered**  ->篡改  
+**asterisk**  ->星号    
+**fraction**  ->分数  
 
 
 ---
 
-### word in PDF
+### word in PDF  
 **preface**         ->前言  
 **wrap up**         ->收尾  
 **conclusion**      ->结语  
@@ -72,7 +76,8 @@
 **convention**      ->会议，约定  
 **Errata**          ->勘误表  
 **acknowledgement** ->感谢名单  
-**Definitive Guides**->权威指南  
+**Definitive Guides**->权威指南    
+
 ---
 
 ### other words 
@@ -107,6 +112,7 @@
 **general-purpose** :通用  
 **base off**    ->基于
 
+---  
 
 ### programming only
 **imperative programming**      ->   
@@ -114,6 +120,8 @@
 **gate bridge** -> 网桥  
 **scaffold**  -> 脚手架  
 **idle**  -> 闲置的；懒惰的 
-**flow chart** -> 流程图
+**flow chart** -> 流程图    
+
+---
 
 

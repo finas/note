@@ -41,7 +41,7 @@
 24. `echo 0 >/proc/sys/net/ipv4/icmp_echo_ignore_all` for temp allow or append `net.ipv4.icmp_echo_ignore_all=1` to `/etc/sysctl.conf` for save to disk  
 25. **Data URLS**, URLs prefixed with the `data:` scheme,allow content creators to embed small files inline in documents.  [mdn](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs)
 26. `tail -n 20 /var/log/nginx/error.log` to find nginx problem.   
-27. `cat ~/.ssh/id_rsa.pub | ssh username@hostname ' cat >>.ssh/authorized_keys'`  copy public key to server `authorized_key`. 
+27. `cat ~/.ssh/id_rsa.pub | ssh username@hostname ' mkdir -p .ssh && cat >>.ssh/authorized_keys'`  copy public key to server `authorized_key`. 
 28. `sudo chown -R group:user folder` change the folder user group.   
 29. `unable to access 'https://github.com/xxxx/xxx.git': Failed to connect to 127.0.0.1 port 8087: Connection refused` may related to system http proxy `env|grep -i proxy`      
 30. use `git patch` cherry pick only one file  `git diff <branch>..<other-branch> --<fileName> |git apply`  
@@ -51,8 +51,14 @@
 34. `grep --color -R --exclude-dir=node_modules '\.js"\ ` to find  
 35. If the request method is `GET` or `HEAD`, `XMLHttpRequest` will ignore request body .  
 36. `curl -v -H "Accept: application/json"  https://httpbin.org/get` will see the request header and body
-37. `git show branch:file`  
+37. `git show branch:file`  `git merge branch --no-commit --no-ff` to ignore no-diff merge .  
 38. `require` vs `import` [link](http://www.cnblogs.com/unclekeith/p/7679503.html)  
 39. `204 No Content` is meant to say there is no body to return  
 40. `curl http://www.vdberg.org/~richard/tcpping -o tcpping ` to download tcpping
 41. `cat foo.c | sed '/^\s*#/d;/^\s*$/d' | wc -l` to count-non-blank-lines-of-code-in-bash  
+42. `git push origin :branch_name` or `git branch -r -d origin/branch` to delete remote branch  
+43. `git rm -r --cached folder` to remove everything from the git index to refresh git reposity if you change some file when not ignore early .
+44. `stty -ixon` to enable XON/XOFF flow control then you can use `ctrl-s` to reverse-reverse-i-search  
+45. `cache:http://www.baidu.com` to see the website cached by google in chrome  
+46.   `.git/config` is repo's .gitconfig file and `~/.gitconfig` is global git config     
+47. `curl -s -I -v   http://www.baidu.com`  simple get request and response header  
