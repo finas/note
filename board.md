@@ -62,4 +62,5 @@
 45. `cache:http://www.baidu.com` to see the website cached by google in chrome  
 46.   `.git/config` is repo's .gitconfig file and `~/.gitconfig` is global git config     
 47. `curl -s -I -v   http://www.baidu.com`  simple get request and response header  
-48. `find / -type d -name "*Chrome.app"` find chrome
+48. `find / -type d -name "*Chrome.app"` find chrome  
+49. `npm-check -u ` to check npm package health  
