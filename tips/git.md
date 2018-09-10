@@ -106,4 +106,28 @@ diff 不同的分支
 
     ``` git rebase --onto commit-id^ commit-id ```
 
+
+
+git pre-commit检查
+```bash
+#!/bin/sh
+jsfiles=$(git diff --cached --name-only --diff-filter=ACM "*.js" "*.jsx" | tr '\n' ' ')
+[ -z "$jsfiles" ] && exit 0
+
+# Prettify all staged .js files
+echo "$jsfiles" | xargs ./node_modules/.bin/prettier --write
+
+# Add back the modified/prettified files to staging
+echo "$jsfiles" | xargs git add
+
+exit 0
+```
+或者你需要加入`.git/hooks/post-commit`  
+```bash
+#!/bin/sh
+git update-index -g
+```
+
+
+
 [checkout_vs_revert](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)
