@@ -62,7 +62,9 @@
 **tampered**  ->篡改  
 **asterisk**  ->星号    
 **fraction**  ->分数  
-
+**discard**   ->丢弃  
+**embrace**   ->  
+**bloat**          ->
 
 ---
 
