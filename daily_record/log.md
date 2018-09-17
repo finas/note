@@ -103,4 +103,4 @@ uri (Uniform Resource Locator ) contains:url,urn
 
 ### curl test websocket  
 `curl --include      --no-buffer      --header "Connection: Upgrade"      --header "Upgrade: websocket"
---header "Host: biger.in"         --header "Sec-WebSocket-Key: SGVsbG8sIHdvcmxkIQ=="      --header "Sec-WebSocket-Version: 13"     biger.in/ws`
+--header "Host: ttttt"         --header "Sec-WebSocket-Key: SGVsbG8sIHdvcmxkIQ=="      --header "Sec-WebSocket-Version: 13"     ttt/ws`

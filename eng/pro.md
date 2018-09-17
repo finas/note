@@ -64,8 +64,27 @@
 **fraction**  ->分数  
 **discard**   ->丢弃  
 **embrace**   ->  
-**bloat**          ->
-
+**bloat**          ->. 
+**seed phrase**.  ->. 
+**Consistency** 	->. 
+**kit**       ->  .  
+**abide**		->.   
+**violate**	   ->.  
+**encounter**	->.   
+**accommodate**	 ->. 
+**migration**.   ->.   
+**constancy**.  _>.   
+**conscious**   ->.   
+**convention**. ->.    
+**applause**	->.  
+**confront**    ->.    
+**approachable**	->.  
+**versatile**	 ->.   
+**patreon**		->.   
+**hypothetical**  ->.  
+**gotchas**		->.     
+**elimate**		->.   
+**payload**		->.   有效载荷  
 ---
 
 ### word in PDF  
