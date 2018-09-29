@@ -243,3 +243,18 @@ var T = new Toast({prompt:'I\'m Toast!'});
 T.show();
 
 ```
+
+### optimize code evalute    
+```js
+//freeze   
+ Object.assign(state, Object.freeze({
+  name: to.name,
+  path: to.path,
+  hash: to.hash,
+  query: to.query,
+  params: to.params,
+  fullPath: to.fullPath,
+  meta: to.meta,
+  from
+}))
+```

@@ -64,4 +64,6 @@
 47. `curl -s -I -v   http://www.baidu.com`  simple get request and response header  
 48. `find / -type d -name "*Chrome.app"` find chrome  
 49. `npm-check -u ` to check npm package health    
-50. [babel-plugin-component](https://github.com/ElementUI/babel-plugin-component) to require on demand for optimizing code size.  
+50. [babel-plugin-component](https://github.com/ElementUI/babel-plugin-component) to require on demand for optimizing code size.    
+51. `Accept-Language: fr-CH, fr;q=0.9, en;q=0.8, de;q=0.7, *;q=0.5`  // Multiple types, weighted with the quality value syntax:    
+52. `find . -type f -name '*.gz' -exec rm {} +` to remove all file type endwith gz  

@@ -7,14 +7,15 @@
 **escape**          ->编码  
 **prune**           ->删除，减少  
 **stuff**           ->填充物  
-**boilerplate**		->模板文件  
+**staff**           ->职员，参谋  
+**boilerplate**		  ->模板文件  
 **delimiter**       ->分隔符    
 **clause**          -> 条款  
 **computer**        -> 实时计算            (value are computed)  
 **on demand**       -> 按需，一经要求       (product on demand)  
 **established**     ->已建立的             (tcp established)  
 **glossary**        ->专业术语  
-**trunc**           ->截取尾部  
+**trunc**           ->截取尾部 ，舍去小数取整    
 **square**          ->平方  
 **patch**           ->补丁  
 **coerce**          ->强迫，转换(implicitly converting)****            (coerce symboles to strings)  
@@ -29,9 +30,10 @@
 **precise**         ->精准的  
 **episode**         ->插曲，一段情节  
 **sniff**           ->嗅探  
-**tamper**          ->串改   
-**raven**           ->哨兵  
-**fun-tuned**       ->  
+**tamper**          ->篡改   
+**raven**           ->掠夺，劫掠；大乌鸦   
+**sentry**          ->哨兵    
+**fine tune**       ->微调    
 **synopsis**        -> 概要  
 **candidate**       ->  
 **evasion**         ->逃避    
@@ -63,28 +65,70 @@
 **asterisk**  ->星号    
 **fraction**  ->分数  
 **discard**   ->丢弃  
-**embrace**   ->  
-**bloat**          ->. 
-**seed phrase**.  ->. 
-**Consistency** 	->. 
-**kit**       ->  .  
-**abide**		->.   
-**violate**	   ->.  
-**encounter**	->.   
-**accommodate**	 ->. 
-**migration**.   ->.   
-**constancy**.  _>.   
-**conscious**   ->.   
-**convention**. ->.    
-**applause**	->.  
-**confront**    ->.    
-**approachable**	->.  
+**embrace**   ->拥抱；包围      
+**bloat**          ->使膨胀     
+**seed phrase**.  ->.   
+**Consistency** 	->. 一致性。    
+**kit**       ->  .  工具箱；成套工具  
+**abide**		->.忍受；停留 。     
+**abuse**   ->滥用 。  
+**violate**	   ->. 违反 ，亵渎。  
+**contract**  ->合同。  
+**encounter**	->相遇。       
+**accommodate**	 ->容纳；使适应     
+**migration**.   ->. yiming    
+**constancy**.  _>.     
+**conscious**   ->.     
+**convention**. ->.      
+**applause**	->.    
+**confront**    ->.      
+**approachable**	->.    
 **versatile**	 ->.   
 **patreon**		->.   
 **hypothetical**  ->.  
 **gotchas**		->.     
 **elimate**		->.   
-**payload**		->.   有效载荷  
+**payload**		->.   有效载荷   
+**cognitive** ->认知的。  
+**axiom**   ->公理；格言；自明之理  
+**derivce** ->源自；获得   
+**initiated**	->    
+**advertise**	->   
+**variant**		->    
+**negotation**	->  
+**proposal**	->   
+**adequate**	->   
+**theoretically**	->   
+**advancement**	->    
+**respectively**	->    
+**tamper**	->  
+**keystroke**	->  .
+**neutral**	->   
+**presence**	->    
+**peek**	->    
+**error prone**	->    
+**incremental**->    
+**distributed**	->  
+**congenial**	->  
+**permute**		->    
+**Palette**		->调色板。  
+**Dexterity**	->  
+**macro**		->  
+**candidate**	->.   
+**recognition**	->. 
+**sophisticate**	->.  
+**insane**    ->    
+**aesthetic**   ->   . 
+**schema**    ->[links](https://techterms.com/definition/schema)    schemata,schematic  
+**indice**    ->   
+**metrics**   ->  
+**expiry**    ->  
+**quote**     ->    
+**portfolio** ->   
+**delist**    ->  
+**dividend**  ->    
+**sneak peek**		  ->。
+****		 ->  
 ---
 
 ### word in PDF  
@@ -98,6 +142,7 @@
 **Errata**          ->勘误表  
 **acknowledgement** ->感谢名单  
 **Definitive Guides**->权威指南    
+**feedback**      ->  
 
 ---
 
@@ -131,7 +176,8 @@
 
 **favor mainstream over elegance**  :偏爱主流而不是优雅  
 **general-purpose** :通用  
-**base off**    ->基于
+**base off**    ->基于  
+**the term of**		->。。。的条款。
 
 ---  
 
@@ -142,6 +188,7 @@
 **scaffold**  -> 脚手架  
 **idle**  -> 闲置的；懒惰的 
 **flow chart** -> 流程图    
+**just-in-time**	->  
 
 ---
 

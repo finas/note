@@ -11,3 +11,4 @@ house edge.
 escape hatch.   
 bend:弯曲    
 affair:    
+Pentium：奔腾。
