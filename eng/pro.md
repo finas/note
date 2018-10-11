@@ -128,7 +128,24 @@
 **delist**    ->  
 **dividend**  ->    
 **sneak peek**		  ->。
-****		 ->  
+**downgrade**		 ->  
+**undisguised**		->   
+**comma**		->  
+**brace**		->   
+**curly**		->    
+**sparse**		->    
+**negate**		->  
+**unary**		->  
+**tune**        ->   
+**datagram**    ->    
+**delivery**    ->    
+**best-effort** ->    
+**relieve**     ->    
+**invariably**  ->    
+**in term of **        ->  
+**convension**  ->  
+**unopinionated**   ->  
+**boilerplate** ->  
 ---
 
 ### word in PDF  
@@ -142,7 +159,10 @@
 **Errata**          ->勘误表  
 **acknowledgement** ->感谢名单  
 **Definitive Guides**->权威指南    
-**feedback**      ->  
+**feedback**      ->    
+*awkward**		->    
+**parenthese**	->  
+**commas**	->  
 
 ---
 

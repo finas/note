@@ -91,3 +91,6 @@ HK
 
 
 ### read-file-into-array
+
+### merge folder  
+rsync -av /source/ /destination/
