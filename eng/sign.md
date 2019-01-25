@@ -23,6 +23,7 @@
 
 ＞ is more than 大于号
 
+<> angle brackets  尖括号 。
 ≮ is not less than 不小于号
 
 ≯ is not more than 不大于号
@@ -121,7 +122,7 @@ tilde 波浪符
 
 question mark 问号
 
-!exclamation mark (英式英语) exclamation point (美式英语)
+!exclamation mark (英式英语) exclamation point (美式英语) bang
 
 ' apostrophe 撇号
 

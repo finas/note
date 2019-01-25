@@ -1,0 +1,4 @@
+margin  
+gross
+screener  
+dividend

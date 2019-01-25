@@ -128,6 +128,11 @@ exit 0
 git update-index -g
 ```
 
-
+俩个分支直接的区别
+```bash
+git cherry -v master
+git log master..
+git log master..develop
+```
 
 [checkout_vs_revert](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)

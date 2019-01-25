@@ -9,6 +9,8 @@
 <a href="#curl">curl</a>,
 <a href="#find">find</a>,
 <a href="alias">alias</a>,
+<a href="env">env</a>
+<a href="iptable"></a>
 
 
 <a id="<<"></a>
@@ -34,6 +36,7 @@ curl --head https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.js | \
     grep -i "access-control-allow-origin"
 
 curl -sSL -D - www.acooke.org -o /dev/null
+curl -L ipapi.co/111.231.89.47
 
 #--socks5 :use the socks5 proxy
 #--socks5-hostname : resolve the DNS on the other side
@@ -47,6 +50,7 @@ curl -sSL -D - www.acooke.org -o /dev/null
 **netstat**
 ```bash
 netstat -tulnp
+sudo lsof -i -n -P | grep TCP  
 
 #--t tcp protocal
 #--u udp protocal
@@ -136,4 +140,30 @@ alias df="df - h" #express the size as MB AND GB for better view
 alias rm="rm-i"   # more interactive
 alias cp="cp-i"   # the same as above 
 
+```
+
+
+<a id="env"></a>
+**env**
+```bash
+
+```
+
+
+<a id="iptable"></a>
+**iptable**
+```bash
+# list rules by specification
+iptables -S
+iptables -S TCP
+iptables -S INPUT
+
+
+# list rules as Tables
+iptables -L 
+iptables -L INPUT
+
+
+
+iptables -t nat -A OUTPUT -o lo -p tcp --dport 80 -j REDIRECT --to-port 8080
 ```

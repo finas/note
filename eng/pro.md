@@ -146,6 +146,9 @@
 **convension**  ->  
 **unopinionated**   ->  
 **boilerplate** ->  
+**unforseably** ->  
+**singular**->单数  
+**even**->偶数 。
 ---
 
 ### word in PDF  

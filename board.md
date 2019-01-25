@@ -67,3 +67,13 @@
 50. [babel-plugin-component](https://github.com/ElementUI/babel-plugin-component) to require on demand for optimizing code size.    
 51. `Accept-Language: fr-CH, fr;q=0.9, en;q=0.8, de;q=0.7, *;q=0.5`  // Multiple types, weighted with the quality value syntax:    
 52. `find . -type f -name '*.gz' -exec rm {} +` to remove all file type endwith gz  
+53. `git log origin/release..HEAD --graph --decorate --oneline` show the different commit between branch 
+54.  `git config --system --unset credential.helper` remove git credential cache to reauth  
+55.  `git show-ref --abbrev=7 --tags`  show tag commit id  
+56.  `cat .git/refs/tags/*` show git tag  
+57.  `npm outdated -g`  `npm ls --depth=1` `npm la`  `npm show package version` `npm search`  `npm completion >> ~/.bashrc`    
+58. ` curl cli.fyi/help`  
+59. `git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"`
+60. `nginx -V` see what it compiled with
+61. `a++` is unary
+62. `setw -g mode-keys vi` for tmux  
