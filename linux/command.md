@@ -30,6 +30,8 @@
 ```bash
 #test my socks5 server status
 curl --socks5-hostname [protocal]:[ip:port] http://www.baidu.com/s?wd=ip -v -i
+# test download realtime and total time 
+curl -x socks5://127.0.0.1:1080  -v -o /dev/null  -w 'Total: %{time_total}s\n'  http://ipv4.download.thinkbroadband.com/10MB.zip
 
 #get reponse header params
 curl --head https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.js | \
@@ -163,7 +165,52 @@ iptables -S INPUT
 iptables -L 
 iptables -L INPUT
 
+iptables -L |grep ACCEPT # policy chain default behavior  
+
+iptables -L -v  # get the packets and bytes  
+
+iptables -F # flush all rules  
 
 
-iptables -t nat -A OUTPUT -o lo -p tcp --dport 80 -j REDIRECT --to-port 8080
+
+# allow two way communication but only allow one way connections to be established  
+
+iptables -A INPUT -p tcp --dport ssh -s 10.10.10.10 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+iptables -A OUTPUT -p tcp --sport 22 -d 10.10.10.10 -m state --state ESTABLISHED -j ACCEPT
+
+
+# block all traffic except ssh
+iptables -P INPUT DROP
+iptables -P OUTPUT DROP
+iptables -A INPUT -i lo -j ACCEPT
+iptables -A INPUT -p tcp -m tcp --dport 22 -j ACCEPT
+iptables -A OUTPUT -o lo -j ACCEPT
+iptables -A OUTPUT -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT
+
+
+
+
+# port forward but masquaerade will be abuse  
+iptables -t nat -A PREROUTING -p tcp -m tcp --dport 7654 -j DNAT --to-destination 27.122.57.247:7654
+iptables -t nat -A POSTROUTING -j MASQUERADE
+```
+
+
+
+## multi ping 
+```
+echo $(seq 254) | xargs -P255 -I% -d" " ping -W 1 -c 1 192.168.0.% | grep -E "[0-1].*?:"
+#Advantage 1: You don't need to install any additional tool
+#Advantage 2: It's fast. It does everything in Parallel with a timout for every ping of 1s ("-W 1"). So it will finish in 1s :)
+#Advantage 3: The output is like this
+
+#fallback
+for i in $(seq 255);
+do
+ ping -W 1 -c 1 10.0.0.$i | grep 'from' &
+done
+
+#for plain
+for i in $(seq 1 254); do ping -c1 -t 1 192.168.11.$i; done
 ```

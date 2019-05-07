@@ -3,7 +3,8 @@
 ### RC car  => remote control car  
 ### WDS     => wireless distribution system  
 ### LTD     => limitted. 
-### bio.    => 
+### bio.    => 个人简历，小传  
+### aka     => also known as  
 ### 
 
 

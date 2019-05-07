@@ -77,3 +77,29 @@
 60. `nginx -V` see what it compiled with
 61. `a++` is unary
 62. `setw -g mode-keys vi` for tmux  
+63. `export http_proxy='http://proxyServerSddress:proxyPort'` finally `unset http_proxy`  
+64. `echo 050100 | xxd -p -r | netcat -o out.txt {server} {port}` test socks5 proxy
+65. `git config --global core.fileMode false` ignore
+66. `socat tcp-l:7654,fork,reuseaddr tcp:27.122.57.247:7654 &` `socat UDP-LISTEN:7654,fork,reuseaddr dup:27.122.57.247:7654 &` for port forward   
+67. ` cp /home/sample.txt{,-old}` =>`cp /home/sample.txt /home/sample.txt-oldx`  
+68. `apropos "list directory"` to recall command  
+69. `curl -o /dev/null -s -w 'Establish Connection: %{time_connect}s\nTTFB: %{time_starttransfer}s\nTotal: %{time_total}s\n'  https://www.google.com` 
+70. `mtr='PATH=/usr/local/sbin:$PATH sudo mtr'`  `export PATH=/opt/local/bin:/usr/local/Cellar/mtr/0.92/sbin/:$PATH`  enable mtr at mac..   
+71. `who | grep -v 'via mosh' | grep -oP '(?<=mosh \[)(\d+)(?=\])' | xargs kill`  or `kill pidof mosh-server`  kill the mosh session  belong to you  
+72. `git diff origin/master > patch`,`git apply --check xxx.patch`,`git apply --status xxx.patch`, `git apply --revers patch`  to update branch  
+73. `ps aux | grep "[f]nord"` or `ps aux | grep -v grep | grep "fnord"` or 
+74. `less -r output.txt` to view termnial-style txt  
+75. `git log --all --decorate --simplify-by-decoration --graph --all --date=relative` try to figure the relationship  between branch  
+76. `git branch --contains --all $branchName` show all branch(include remote) which contain current branch   
+77. `sudo du -a / 2>/dev/null | sort -n -r | head -n 20` find big files  
+78. `iptables-save |vi - ` to check the rule script  
+79. `iptables -A INPUT -s 192.168.1.100 -p icmp -j DROP` or `iptables -A INPUT -p icmp -j DROP`  
+80. `wireshark -k -i <( ssh -l root IP-of-probe /usr/bin/tshark -i eth0 -w - port 53 )` capture remote ssh network package  
+81. `find -type f -print0 2>/dev/null | xargs -0 -n 10 grep -i searchstring 2>/dev/null` Redirect standard error to /dev/null  
+82. `find /var/log  -name "auth.log*" -print0|xargs -P0 -0 grep "Failed"|awk '{print $11}'|sort|uniq -c` or`awk '/Failed password for/ ' /var/log/secure* | sed 's/.* \([[:print:]]\+\) from .*/ \1 /g ' | sort | uniq -c | sort -n -k1`  find out ssh failed attemp ip  or you may need `fail2ban`  
+83. `du -h  -d 1 | sort -hr` see folder size  
+84. `git stash save -u` stash all file  
+85. The old-style backquotes \` \` do treat backslashes and nesting a bit different. The new-style $() interprets everything in between ( ) as a command.
+86. `sh -x script [arg1 ...]` `bash -x script [arg1 ...]` `set -x` `set +x` debug script  
+87. you need confirm your `.ssh` folder is accessible by user(you will get a key failed auth).  `chown -r owner-user:owner-group .ssh` for change to file owner  
+88.replace str `grep -rl matchstring somedir/ | xargs sed -i 's/string1/string2/g'` in OSX ` sed -i "" 's/str1/str2/g'`  
