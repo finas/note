@@ -102,4 +102,13 @@
 85. The old-style backquotes \` \` do treat backslashes and nesting a bit different. The new-style $() interprets everything in between ( ) as a command.
 86. `sh -x script [arg1 ...]` `bash -x script [arg1 ...]` `set -x` `set +x` debug script  
 87. you need confirm your `.ssh` folder is accessible by user(you will get a key failed auth).  `chown -r owner-user:owner-group .ssh` for change to file owner  
-88.replace str `grep -rl matchstring somedir/ | xargs sed -i 's/string1/string2/g'` in OSX ` sed -i "" 's/str1/str2/g'`  
+88. replace str `grep -rl matchstring somedir/ | xargs sed -i 's/string1/string2/g'` in OSX ` sed -i "" 's/str1/str2/g'`  
+89. `git reset --hard HEAD^` or `git reset --soft HEAD^` to undo a local commit .`git revert HEAD` then `git push origin` for remote  update. 
+90.  `git config credential.helper cache` for temporary cache your account infor  
+91. `git diff ..origin/dev|git apply` apply the diff between remote dev to local current head  in stage    
+92. `cat 0021500492.json | python -m json.tool |less` for view large json file.  
+93. `sudo add-apt-repository universe` then `sudo apt-get install netcat-traditional` then `sudo update-alternatives --config nc` finally `Select the option /bin/nc.traditional`  
+94. `curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -` for testing network speed  
+95. git show head~1:/path/to/file    
+96. `git rev-list --all --remotes --pretty=oneline -- src/views/trade/other.vue` get the file commit log in all history  
+97. `git config --system -l` to check system check. Then `git config --system --unset credential.helper` to forget the credential .  `git config --global credential.helper store` enable credentials storage  

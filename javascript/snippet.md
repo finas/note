@@ -244,7 +244,7 @@ T.show();
 
 ```
 
-### optimize code evalute    
+### optimize code evaluate    
 ```js
 //freeze   
  Object.assign(state, Object.freeze({
@@ -257,4 +257,22 @@ T.show();
   meta: to.meta,
   from
 }))
+```
+
+
+### get depth of object  
+```js
+utils.depthOf = function(object) {
+    var level = 1;
+    var key;
+    for(key in object) {
+        if (!object.hasOwnProperty(key)) continue;
+
+        if(typeof object[key] == 'object'){
+            var depth = utils.depthOf(object[key]) + 1;
+            level = Math.max(depth, level);
+        }
+    }
+    return level;
+}
 ```
