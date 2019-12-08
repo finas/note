@@ -112,4 +112,5 @@
 95. git show head~1:/path/to/file    
 96. `git rev-list --all --remotes --pretty=oneline -- src/views/trade/other.vue` get the file commit log in all history  
 97. `git config --system -l` to check system check. Then `git config --system --unset credential.helper` to forget the credential .  `git config --global credential.helper store` enable credentials storage  
-98. `man -k` or `apropos`
+98. `man -k` or `apropos`  
+99. `git ls-files -z | xargs -0 -n1 -I{} -- git log -1 --format="%ai {}" {} | sort` retrieve the last date of all files
