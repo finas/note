@@ -25,6 +25,42 @@ su - $username
 # see log history  
 history 
 
+
+```
+
+# vps
+
+### First login  
+```bash
+# add user for login  
+adduser user  
+usermod -G sudo xiao  
+passwd #change password
+
+# upload key to server  in client side
+ssh-keygen
+scp ~/.ssh/id_rsa.pub xiao@123.456.78.90:
+
+# add ssh folder  
+mkdir ~/.ssh
+touch ~/.ssh/authorized_keys
+
+chown -R xiao:xiao ~/.ssh
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys  
+
+
+#PasswordAuthentication no
+#PermitRootLogin no
+vi /etc/config/sshd_config 
+sudo service ssh restart
+
+```
+
+
+### Find out attacker  
+```
+   `find /var/log  -name "auth.log*" -print0|xargs -P0 -0 grep "Failed"|awk '{print $11}'|sort|uniq -c` or`awk '/Failed password for/ ' /var/log/secure* | sed 's/.* \([[:print:]]\+\) from .*/ \1 /g ' | sort | uniq -c | sort -n -k1`  find out ssh failed attemp ip  or you may need `fail2ban`  
 ```
 
 
