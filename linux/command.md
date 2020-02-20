@@ -155,30 +155,26 @@ alias cp="cp-i"   # the same as above
 <a id="iptable"></a>
 **iptable**
 ```bash
+# -t nat: --target nat,default is filter  
+
 # list rules by specification
 iptables -S
 iptables -S TCP
 iptables -S INPUT
+iptables -S -t nat
 
-
-# list rules as Tables
-iptables -L 
-iptables -L INPUT
-
-iptables -L |grep ACCEPT # policy chain default behavior  
-
+# list rules as Tables 
+iptables -L   
+iptables -L INPUT  
+iptables -L |grep ACCEPT # policy chain default behavior   
 iptables -L -v  # get the packets and bytes  
-
+iptables -L  -v -t nat  --line-numbers # show line number  
+iptables -t nat -D PREROUTING 2 # delete by line number  
 iptables -F # flush all rules  
 
-
-
 # allow two way communication but only allow one way connections to be established  
-
 iptables -A INPUT -p tcp --dport ssh -s 10.10.10.10 -m state --state NEW,ESTABLISHED -j ACCEPT
-
 iptables -A OUTPUT -p tcp --sport 22 -d 10.10.10.10 -m state --state ESTABLISHED -j ACCEPT
-
 
 # block all traffic except ssh
 iptables -P INPUT DROP
@@ -188,10 +184,10 @@ iptables -A INPUT -p tcp -m tcp --dport 22 -j ACCEPT
 iptables -A OUTPUT -o lo -j ACCEPT
 iptables -A OUTPUT -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT
 
-
-
-
 # port forward but masquaerade will be abuse  
+#enable 
+# net.ipv4.ip_forward=1 on /etc/sysctl.conf and run sysctl -p.
+cat /proc/sys/net/ipv4/ip_forward  
 iptables -t nat -A PREROUTING -p tcp -m tcp --dport 7654 -j DNAT --to-destination 27.122.57.247:7654
 iptables -t nat -A POSTROUTING -j MASQUERADE
 ```
