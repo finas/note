@@ -1,5 +1,18 @@
-## Docker
+# Docker
 
+## speed pull  
+aliyun-private:aHR0cHM6Ly9jbDE5c2kydS5taXJyb3IuYWxpeXVuY3MuY29tCg==  
+```bash
+sudo mkdir -p /etc/docker
+sudo tee /etc/docker/daemon.json <<-'EOF'
+{
+  "registry-mirrors": ["https://cl19si2u.mirror.aliyuncs.com"]
+}
+EOF
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+docker info
+```
 
 ## steps
 1. `docker build -t $docker_name .`
@@ -25,8 +38,6 @@
 you want to reach your host machine as 'localhost'  
 `docker run --add-host="localhost:192.168.65.1"  
 `192.168.65.1` is output by `route|awk '/^default/{print $2}'`
-
-
 
 
 ### sync the time zone in docker with host
