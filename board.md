@@ -70,8 +70,8 @@ git:
     18.  `npm outdated -g`  `npm ls --depth=1` `npm la`  `npm show package version` `npm search`  `npm completion >> ~/.bashrc`    
     19. use `git patch` cherry pick only one file  `git diff <branch>..<other-branch> --<fileName> |git apply`  
     20. `git show branch:file`  `git merge branch --no-commit --no-ff` to ignore no-diff merge .  
-    21. [git ignore case default](https://stackoverflow.com/questions/52950/how-to-make-git-ignore-changes-in-case?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
-) 
+    21. [git ignore case default](https://stackoverflow.com/questions/52950/how-to-make-git-ignore-changes-in-case?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)  
+    22.  `git apply --3way patchFile.patch`  Typical fail case applies as much of the patch as it can, and leaves you with conflicts to work out in git however you normally do so.
 
 
 other:  
