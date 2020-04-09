@@ -109,4 +109,5 @@ other:
   35. `Accept-Language: fr-CH, fr;q=0.9, en;q=0.8, de;q=0.7, *;q=0.5`  // Multiple types, weighted with the quality value syntax:    
   36. The old-style backquotes \` \` do treat backslashes and nesting a bit different. The new-style $() interprets everything in between ( ) as a command.    
   37. `python -m SimpleHTTPServer <port_number>`  `python3 -m http.server`  
-  38. rsync -av --delete source_folder destination_folder
+  38. `rsync -av --delete source_folder destination_folder`    
+  39. `git fetch --prune --prune-tags`  ,`git log --oneline --name-status --grep='Searched phrase'`  
