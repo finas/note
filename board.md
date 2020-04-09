@@ -107,4 +107,5 @@ other:
   33. `cache:http://www.baidu.com` to see the website cached by google in chrome  
   34. [babel-plugin-component](https://github.com/ElementUI/babel-plugin-component) to require on demand for optimizing code size.    
   35. `Accept-Language: fr-CH, fr;q=0.9, en;q=0.8, de;q=0.7, *;q=0.5`  // Multiple types, weighted with the quality value syntax:    
-  36. The old-style backquotes \` \` do treat backslashes and nesting a bit different. The new-style $() interprets everything in between ( ) as a command.
+  36. The old-style backquotes \` \` do treat backslashes and nesting a bit different. The new-style $() interprets everything in between ( ) as a command.    
+  37. `python -m SimpleHTTPServer <port_number>`  `python3 -m http.server`  
