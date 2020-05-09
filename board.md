@@ -46,7 +46,8 @@ linux:
   43. replace str `grep -rl matchstring somedir/ | xargs sed -i 's/string1/string2/g'` in OSX ` sed -i "" 's/str1/str2/g'`  
   44. `cat 0021500492.json | python -m json.tool |less` for view large json file.  
   45. `sudo add-apt-repository universe` then `sudo apt-get install netcat-traditional` then `sudo update-alternatives --config nc` finally `Select the option /bin/nc.traditional`     
-  46. `curl -s -v -X HEAD http://foo.com/bar/baz.pdf 2>&1 | grep '^< Last-Modified:'` for query website upgrade time  
+  46. `curl -s -v -X HEAD http://foo.com/bar/baz.pdf 2>&1 | grep '^< Last-Modified:'` for query website upgrade time    
+  47. `socat tcp-l:4431,fork,reuseaddr tcp:152.32.191.48:4431 & socat UDP-LISTEN:4431,fork,reuseaddr dup:152.32.191.48:4431 &`  proxy
 
 
 git:  
