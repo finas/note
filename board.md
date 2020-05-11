@@ -47,7 +47,8 @@ linux:
   44. `cat 0021500492.json | python -m json.tool |less` for view large json file.  
   45. `sudo add-apt-repository universe` then `sudo apt-get install netcat-traditional` then `sudo update-alternatives --config nc` finally `Select the option /bin/nc.traditional`     
   46. `curl -s -v -X HEAD http://foo.com/bar/baz.pdf 2>&1 | grep '^< Last-Modified:'` for query website upgrade time    
-  47. `socat tcp-l:4431,fork,reuseaddr tcp:152.32.191.48:4431 & socat UDP-LISTEN:4431,fork,reuseaddr dup:152.32.191.48:4431 &`  proxy
+  47. `socat tcp-l:4431,fork,reuseaddr tcp:152.32.191.48:4431 & socat UDP-LISTEN:4431,fork,reuseaddr dup:152.32.191.48:4431 &`  proxy  
+  48. `iftop -n -N -f  "host 112.64.175.162"` filter the specified network traffic  
 
 
 git:  
