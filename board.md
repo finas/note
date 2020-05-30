@@ -4,7 +4,7 @@ linux:
   1. `openssl passwd -crypt 12345` will generate different output every time but how to check the `12345` send from client whether is same as the server.    
   2. `xargs` convert stdout to args `ls |xargs echo ` 
   3. press `c-v` in vim enter visual block then do the multi select  
-  4. There may be some relations between `ls|wc|xargs` and `fetch(url).then(getResponse).then(handleData)`  
+  4. It's funny to see `ls|wc|xargs` and `fetch(url).then(getResponse).then(handleData)`  
   5. linux redirect  [link1](https://www.digitalocean.com/community/tutorials/an-introduction-to-linux-i-o-redirection),[link2](https://stackoverflow.com/questions/6674327/redirect-all-output-to-file),[link3](https://www.tldp.org/LDP/abs/html/io-redirection.html),[link4](https://ryanstutorials.net/linuxtutorial/piping.php)  
   6. use `who` ,`last` to get all logined user
   7. `curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -` for testing network speed  
@@ -89,9 +89,7 @@ other:
   8.  `this` is different when use in onClick and addEventListener('click') [mdn](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)  
   9.  use `db.things.find( { ln : { $exists : true } } );` to select by the  given key [nedb](https://github.com/louischatriot/nedb)
   10. use `https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=APPID&secret=APPSECRET` to get weixin api `access_token` [blog](https://blog.csdn.net/yasha009/article/details/51839764)  
-  11. axios-retry 了解下[git](https://github.com/softonic/axios-retry)  
-  12. 30-seconds-of-code了解下[git](https://github.com/Chalarangelo/30-seconds-of-code#ary)
-  13. 微信开发 了解下 [test](https://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/index), [sf](https://segmentfault.com/a/1190000009045051)
+  12. 30-seconds-of-code了解下[git](https://github.com/Chalarangelo/30-seconds-of-code#ary) 
   14. Greedy`/.+/` match as many as possible and lazy`/.+?/` as few as possible [tutorial](https://javascript.info/regexp-greedy-and-lazy) 
   15. `encodeURIComponent` will encode `=`,so encode `value` not `key=value` when encode path  
   16. server return `304` when request  `If-Modified-Since`<= response `Last-Modified` and request  `If-None-Match` `==` response `ETag`
