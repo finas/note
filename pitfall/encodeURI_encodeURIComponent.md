@@ -41,10 +41,7 @@ ETag: W/"14-fHpApCQYE+CDuAZeBqel1tnCh/E"
 + escape（69个）：*/@+-._0-9a-zA-Z
 + encodeURI（82个）：!#$&'()*+,/:;=?@-._~0-9a-zA-Z
 + encodeURIComponent（71个）：!'()*-._~0-9a-zA-Z
-
-
-
-```js
+```js  
 encodeURI('https://www.baidu.com/ a b c')
 // "https://www.baidu.com/%20a%20b%20c"
 encodeURIComponent('https://www.baidu.com/ a b c')

@@ -37,24 +37,16 @@ docker info
 ##### OR  
 you want to reach your host machine as 'localhost'  
 `docker run --add-host="localhost:192.168.65.1"  
-`192.168.65.1` is output by `route|awk '/^default/{print $2}'`
+`192.168.65.1` is output by `route|awk '/^default/{print $2}'`  
+
 
 
 ### sync the time zone in docker with host
 
  + `docker run -v /etc/localtime:/etc/localtime:ro `
 
-### get host's ip
-```js 
-//node
-ip = require('child_process')
-      .spawnSync('curl', ['ifconfig.io'])
-      .stdout
-      .toString()
-      .trim()
 
-```
-
+  
 ### remove images
 + remove specified `docker images -a | grep "pattern" | awk '{print $3}' | xargs docker rmi` 
 + remove all       `docker rmi $(docker images -a -q)`
