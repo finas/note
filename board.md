@@ -54,17 +54,17 @@ linux:
 git:  
     1. `git show head~1:/path/to/file`    
     2. `git rev-list --all --remotes --pretty=oneline -- src/views/trade/other.vue` get the file commit log in all history  
-    3. `git config --system -l` to check system check. Then `git config --system --unset credential.helper` to forget the credential .  `git config --global credential.helper store` enable credentials storage  `git config --global core.ignorecase true`
-    4. `git ls-files -z | xargs -0 -n1 -I{} -- git log -1 --format="%ai {}" {} | sort` retrieve the last date of all files
-    5. `git diff origin/master > patch`,`git apply --check xxx.patch`,`git apply --status xxx.patch`, `git apply --revers patch`  to update branch  
+    3. `git config --system -l` to check system check. Then `git config --system --unset credential.helper` to forget the credential .  `git config --global credential.helper store` enable credentials storage  `git config --global core.ignorecase true`  
+    4. `git ls-files -z | xargs -0 -n1 -I{} -- git log -1 --format="%ai {}" {} | sort` retrieve the last date of all files  
+    5. `git diff origin/master > patch`,`git apply --check xxx.patch`,`git apply --status xxx.patch`, `git apply --revers patch`  to update branch    
     6. `git reset --hard HEAD^` or `git reset --soft HEAD^` to undo a local commit .`git revert HEAD` then `git push origin` for remote  update. 
     7. `git config credential.helper cache` for temporary cache your account infor  `git config --system --unset credential.helper`
     8. `git diff ..origin/dev|git apply` apply the diff between remote dev to local current head  in stage    
     9. `git log --all --decorate --simplify-by-decoration --graph --all --date=relative` try to figure the relationship  between branch  
-    10. `git branch --contains --all $branchName` show all branch(include remote) which contain current branch   
-    11. `git config --global core.fileMode false` ignore
-    12. `git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"`
-    13. `git log origin/release..HEAD --graph --decorate --oneline` show the different commit between branch 
+    10. `git branch --contains --all $branchName` show all branch(include remote) which contain current branch     
+    11. `git config --global core.fileMode false` ignore  
+    12. `git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"`  
+    13. `git log origin/release..HEAD --graph --decorate --oneline` show the different commit between branch   
     14. `gitk --all file` will show the all history of the file  `git checkout -p ` give you a change to checkout each hun individually  
     15. `unable to access 'https://github.com/xxxx/xxx.git': Failed to connect to 127.0.0.1 port 8087: Connection refused` may related to system http proxy `env|grep -i proxy`      
     16.  `git show-ref --abbrev=7 --tags`  show tag commit id  
@@ -75,7 +75,9 @@ git:
     21. [git ignore case default](https://stackoverflow.com/questions/52950/how-to-make-git-ignore-changes-in-case?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)  
     22.  `git apply --3way patchFile.patch`  Typical fail case applies as much of the patch as it can, and leaves you with conflicts to work out in git however you normally do so.    
     23. `git push --follow-tags` only push tag created by `git tag -a <tagname> -m '<message>'`,`git push origin tagname` push the specified tag.   
-    24. `git diff --name-only    release-1.1.19..release-1.1.31 -- '*.tsx' -- '*.ts' -- '*.less'` show the different between two commit.  
+    24. `git diff --name-only    release-1.1.19..release-1.1.31 -- '*.tsx' -- '*.ts' -- '*.less'` show the different between two commit.
+    
+    25. `git fetch --prune --prune-tags origin` synchron remote tag with local   
 
 other:  
 
