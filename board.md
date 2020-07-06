@@ -79,6 +79,9 @@ git:
     
     25. `git fetch --prune --prune-tags origin` synchron remote tag with local   
 
+VSC:
+    1. `ctrl+D` add current selection to match . `Ctrl+Shift+D` + add all selection .    
+
 other:  
 
   1. `http auth`contains `basic auth`,`digest auth`.return `401` when auth fail.  
