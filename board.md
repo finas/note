@@ -75,9 +75,10 @@ git:
     21. [git ignore case default](https://stackoverflow.com/questions/52950/how-to-make-git-ignore-changes-in-case?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)  
     22.  `git apply --3way patchFile.patch`  Typical fail case applies as much of the patch as it can, and leaves you with conflicts to work out in git however you normally do so.    
     23. `git push --follow-tags` only push tag created by `git tag -a <tagname> -m '<message>'`,`git push origin tagname` push the specified tag.   
-    24. `git diff --name-only    release-1.1.19..release-1.1.31 -- '*.tsx' -- '*.ts' -- '*.less'` show the different between two commit.
-    
+    24. `git diff --name-only    release-1.1.19..release-1.1.31 -- '*.tsx' -- '*.ts' -- '*.less'` show the different between two commit.  
     25. `git fetch --prune --prune-tags origin` synchron remote tag with local   
+    26. `git push origin branchA:branchB`  push the nickname.  
+    27. `git checkout master` and `git merge <commit hash>`  .
 
 VSC:
     1. `ctrl+D` add current selection to match . `Ctrl+Shift+D` + add all selection .    
