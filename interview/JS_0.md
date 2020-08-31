@@ -1,5 +1,5 @@
 #### Data Type    
-Primary: `Undefined`,`Null`,`Number`,`String`,`Symbol`,Boolean`,`BigInt`.  
+Primary: `Undefined`,`Null`,`Number`,`String`,`Symbol`,`Boolean`
 
 Refer:`Object`(`function`,`Array`,`Date`).  
 
