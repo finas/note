@@ -51,7 +51,7 @@ var a = Object.prototype.toString;
 console.log(a.call(2));//[object Number]
 console.log(a.call(true));//[object Boolean]
 console.log(a.call('str'));//[object String]
-console.log(a.call([]));//[object Function]
+console.log(a.call([]));//[object Array]
 console.log(a.call(function(){}));//[object Function]
 console.log(a.call({}));//[object Object]
 console.log(a.call(undefined));//[object Undefined]
