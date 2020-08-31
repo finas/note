@@ -54,6 +54,6 @@ console.log(a.call('str'));//[object String]
 console.log(a.call([]));//[object Function]
 console.log(a.call(function(){}));//[object Function]
 console.log(a.call({}));//[object Object]
-console.log(a.call(undefined));//[object Object]
+console.log(a.call(undefined));//[object Undefined]
 console.log(a.call(null));//[object Null]
 ```
