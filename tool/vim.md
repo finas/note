@@ -39,3 +39,23 @@ set encoding=utf-8
 ```vim
 :%s/\<foo\>/bar/gc
 ```
+
+6. ### sublime 
+```js
+//settings 
+{
+	"ignored_packages":
+	[
+	],
+	"vintage_ctrl_keys": true
+}
+
+//key-binds 
+{ "keys": ["command+c"], "command": "exit_insert_mode",
+    "context":
+    [
+        { "key": "setting.command_mode", "operand": false },
+        { "key": "setting.is_widget", "operand": false }
+    ]
+}
+```
