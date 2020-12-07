@@ -20,3 +20,9 @@ sudo yum install yarn
 curl -fsSL https://get.docker.com -o get-docker.sh
 sh get-docker.sh
 ```
+
+
+### v2ray 
+```bash
+bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)
+```
