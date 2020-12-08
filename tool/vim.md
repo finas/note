@@ -41,21 +41,27 @@ set encoding=utf-8
 ```
 
 6. ### sublime 
-```js
+```json
 //settings 
 {
-	"ignored_packages":
-	[
-	],
-	"vintage_ctrl_keys": true
+    "ignored_packages":[],
+    "vintage_ctrl_keys": true
 }
-
 //key-binds 
-{ "keys": ["command+c"], "command": "exit_insert_mode",
-    "context":
-    [
+{ 
+    "keys": ["command+c"], "command": "exit_insert_mode",
+    "context":[
         { "key": "setting.command_mode", "operand": false },
-        { "key": "setting.is_widget", "operand": false }
-    ]
+        { "key": "setting.is_widget", "operand": false }]
 }
+```
+
+7. ### visual studio code. 
+```json
+//settings 
+"vim.insertModeKeyBindings": [{
+    "before":["j","j"],
+    "after":["<Esc>","l"]
+}]. 
+
 ```
