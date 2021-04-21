@@ -81,9 +81,10 @@ git:
     26. `git push origin branchA:branchB`  push the nickname.  
     27. `git checkout master` and `git merge <commit hash>`  .
 
-VSC:
+VSC:  
     1. `ctrl+D` add current selection to match . `Ctrl+Shift+D` + add all selection .    
-    2. `ctrl+shirft+O` show symbols (quick variable,method quick goto)
+    2. `ctrl+shirft+O` show symbols (quick variable,method quick goto). 
+    3. `ctrl+option+P` show next problem.  
 
 other:  
 
