@@ -83,6 +83,7 @@ git:
 
 VSC:
     1. `ctrl+D` add current selection to match . `Ctrl+Shift+D` + add all selection .    
+    2. `ctrl+shirft+O` show symbols (quick variable,method quick goto)
 
 other:  
 
