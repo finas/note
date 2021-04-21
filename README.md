@@ -79,7 +79,8 @@ git:
     24. `git diff --name-only    release-1.1.19..release-1.1.31 -- '*.tsx' -- '*.ts' -- '*.less'` show the different between two commit.  
     25. `git fetch --prune --prune-tags origin` synchron remote tag with local   
     26. `git push origin branchA:branchB`  push the nickname.  
-    27. `git checkout master` and `git merge <commit hash>`  .
+    27. `git checkout master` and `git merge <commit hash>`  .  
+    28. `git log head..origin/master --name-only --no-merges `.   
 
 VSC:  
     1. `ctrl+D` add current selection to match . `Ctrl+Shift+D` + add all selection .    
