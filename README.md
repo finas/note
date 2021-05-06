@@ -50,6 +50,7 @@ linux:
   47. `socat tcp-l:4431,fork,reuseaddr tcp:152.32.191.48:4431 & socat UDP-LISTEN:4431,fork,reuseaddr dup:152.32.191.48:4431 &`  proxy  
   48. `iftop -n -N -f  "host 112.64.175.162"` filter the specified network traffic    
   49. `grep -e "search_word" -rn folder` show the line number of fined file  
+  50. `echo $SHELL` or `ps -p $$` to determine current shell. 
 
 
 git:  
