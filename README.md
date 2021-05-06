@@ -123,3 +123,7 @@ other:
   37. `python -m SimpleHTTPServer <port_number>`  `python3 -m http.server`  
   38. `rsync -av --delete source_folder destination_folder`    
   39. `git fetch --prune --prune-tags`  ,`git log --oneline --name-status --grep='Searched phrase'`  
+
+
+kube:  
+1. `kubectl logs -l app=elasticsearch -n namespace` get all pods log from namspace 
