@@ -51,6 +51,7 @@ linux:
   48. `iftop -n -N -f  "host 112.64.175.162"` filter the specified network traffic    
   49. `grep -e "search_word" -rn folder` show the line number of fined file  
   50. `echo $SHELL` or `ps -p $$` to determine current shell. 
+  51. `ls -l node_modules/* | egrep "^l"` output the softlink 
 
 
 git:  
