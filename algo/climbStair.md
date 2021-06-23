@@ -41,3 +41,6 @@ function climbStair(stairs){
   return lastStair+lastLastStair
 }
 ```
+
+
+n stairs can be split into the way of (n-1)stairs + (n-2)stairs => `climbStairs(n)===climbStairs(n-1)+climbStairs(n-2)`
