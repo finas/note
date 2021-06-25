@@ -1,3 +1,4 @@
+```js
 var lengthOfLongestSubstring = function(s) {
     if(s.length<=1){
         return s.length
@@ -17,3 +18,4 @@ var lengthOfLongestSubstring = function(s) {
     }
     return max
 };
+```
