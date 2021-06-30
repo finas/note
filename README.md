@@ -52,6 +52,7 @@ linux:
   49. `grep -e "search_word" -rn folder` show the line number of fined file  
   50. `echo $SHELL` or `ps -p $$` to determine current shell. 
   51. `ls -l node_modules/* | egrep "^l"` output the softlink 
+  52. `find / -name art 2>/dev/null` to skip the error output. 
 
 
 git:  
