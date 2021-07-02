@@ -4,5 +4,9 @@ type ExtractComponentProps<T> = T extends React.ComponentType<infer U>?U:T exten
 
 type valueof<T> = T[keyof T]
 
+type Await<T> = T extends {
+    then(onfulfilled?: (value: infer U) => unknown): unknown;
+} ? U : T;
+
 
 ```
