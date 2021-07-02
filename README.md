@@ -83,7 +83,8 @@ git:
     25. `git fetch --prune --prune-tags origin` synchron remote tag with local   
     26. `git push origin branchA:branchB`  push the nickname.  
     27. `git checkout master` and `git merge <commit hash>`  .  
-    28. `git log head..origin/master --name-only --no-merges `.   
+    28. `git log head..origin/master --name-only --no-merges `.     
+    29. `git merge --no-comit --no-ff` branch & `git merge --abort` to test the merge status.  
 
 VSC:  
     1. `ctrl+D` add current selection to match . `Ctrl+Shift+D` + add all selection .    
