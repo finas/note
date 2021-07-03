@@ -53,6 +53,7 @@ linux:
   50. `echo $SHELL` or `ps -p $$` to determine current shell. 
   51. `ls -l node_modules/* | egrep "^l"` output the softlink 
   52. `find / -name art 2>/dev/null` to skip the error output. 
+  53. `curl ip.sb` ,`curl ident.me` , `curl ip.cn`   
 
 
 git:  
