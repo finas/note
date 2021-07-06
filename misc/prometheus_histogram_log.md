@@ -27,5 +27,5 @@ http_request_duration_seconds_count,platform=""} 10.
 6=>[1441, 1468, 1721,1737, 1874, 1895]<2.  
 
 ### query.  
-`histogram_quantile(0.9,sum(rate(http_request_duration_seconds_bucket[1m]))`     
+`histogram_quantile(0.9,sum(rate(http_request_duration_seconds_bucket[1m]) by(le))`       
 
