@@ -27,5 +27,15 @@ http_request_duration_seconds_count,platform=""} 10.
 6=>[1441, 1468, 1721,1737, 1874, 1895]<2.  
 
 ### query.  
-`histogram_quantile(0.9,sum(rate(http_request_duration_seconds_bucket[1m]) by(le))`       
+`histogram_quantile(0.9,sum(rate(http_request_duration_seconds_bucket[1m])) by(le))`
+
+`http_request_duration_seconds_bucket[1m])` group in 1 minute. 
+`rate()` get count change rate in 1 minute.
+`sum () by(le)` group the `le` label.  
+
+
+### break down. 
+
+1. compare the new data to pre-set  buckets then increment the matched `le` counter.  
+2. ascend the le_counter_list([1.5,1.5,2,2,2,2,2,2,2.5,10]). 
 
