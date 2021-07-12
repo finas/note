@@ -126,7 +126,8 @@ other:
   36. The old-style backquotes \` \` do treat backslashes and nesting a bit different. The new-style $() interprets everything in between ( ) as a command.    
   37. `python -m SimpleHTTPServer <port_number>`  `python3 -m http.server`  
   38. `rsync -av --delete source_folder destination_folder`    
-  39. `git fetch --prune --prune-tags`  ,`git log --oneline --name-status --grep='Searched phrase'`  
+  39. `git fetch --prune --prune-tags`  ,`git log --oneline --name-status --grep='Searched phrase'`    
+  40. `git log commit-id-before commit-id --stat` show the lines added/changed/deleted. (`git diff --numstat HEAD~ `)
 
 
 kube:  
