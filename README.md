@@ -86,6 +86,7 @@ git:
     27. `git checkout master` and `git merge <commit hash>`  .  
     28. `git log head..origin/master --name-only --no-merges `.     
     29. `git merge --no-comit --no-ff` branch & `git merge --abort` to test the merge status.  
+    30. `git stash push --keep-index` stash un-staged only.  git stash save --patch
 
 VSC:  
     1. `ctrl+D` add current selection to match . `Ctrl+Shift+D` + add all selection .    
