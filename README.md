@@ -4,7 +4,6 @@ linux:
   1. `openssl passwd -crypt 12345` will generate different output every time but how to check the `12345` send from client whether is same as the server.    
   2. `xargs` convert stdout to args `ls |xargs echo ` 
   3. press `c-v` in vim enter visual block then do the multi select  
-  4. It's funny to see `ls|wc|xargs` and `fetch(url).then(getResponse).then(handleData)`  
   5. linux redirect  [link1](https://www.digitalocean.com/community/tutorials/an-introduction-to-linux-i-o-redirection),[link2](https://stackoverflow.com/questions/6674327/redirect-all-output-to-file),[link3](https://www.tldp.org/LDP/abs/html/io-redirection.html),[link4](https://ryanstutorials.net/linuxtutorial/piping.php)  
   6. use `who` ,`last` to get all logined user
   7. `curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -` for testing network speed  
@@ -128,7 +127,8 @@ other:
   37. `python -m SimpleHTTPServer <port_number>`  `python3 -m http.server`  
   38. `rsync -av --delete source_folder destination_folder`    
   39. `git fetch --prune --prune-tags`  ,`git log --oneline --name-status --grep='Searched phrase'`    
-  40. `git log commit-id-before commit-id --stat` show the lines added/changed/deleted. (`git diff --numstat HEAD~ `)
+  40. `git log commit-id-before commit-id --stat` show the lines added/changed/deleted. (`git diff --numstat HEAD~ `). 
+  41. `SELECT db_name()` get current database name.  
 
 
 kube:  
