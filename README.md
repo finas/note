@@ -128,7 +128,8 @@ other:
   38. `rsync -av --delete source_folder destination_folder`    
   39. `git fetch --prune --prune-tags`  ,`git log --oneline --name-status --grep='Searched phrase'`    
   40. `git log commit-id-before commit-id --stat` show the lines added/changed/deleted. (`git diff --numstat HEAD~ `). 
-  41. `SELECT db_name()` get current database name.  
+  41. `SELECT db_name()` get current database name.   
+  42. `curl -k -O -L https://npmjs.org/install.sh`    `sh install.sh` install nodejs.  
 
 
 kube:  
