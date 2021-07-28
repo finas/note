@@ -133,4 +133,5 @@ other:
 
 
 kube:  
-1. `kubectl logs -l app=elasticsearch -n namespace` get all pods log from namspace 
+1. `kubectl logs -l app=elasticsearch -n namespace` get all pods log from namspace   
+2. `docker kill $(docker ps -q)` stop all docker containers.   
