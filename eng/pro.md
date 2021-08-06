@@ -150,6 +150,8 @@ singular->单数
 even->偶数 。  
 no break ins->非法侵入 。
 surmise->推测。  
+
+
 Legacy snark from early Linux gray beards.->  
 ---
 
@@ -169,7 +171,6 @@ awkward		->
 parenthese	->  
 commas	->  
 
----
 
 ### other words 
 
