@@ -92,7 +92,7 @@ VSC:
     2. `ctrl+shirft+O` show symbols (quick variable,method quick goto). 
     3. `ctrl+option+P` show next problem.  
 
-other:  
+mis:  
 
   1. `http auth`contains `basic auth`,`digest auth`.return `401` when auth fail.  
   2. simple **http get request** `GET / HTTP/1.1/r/nHost: www.baidu.com/r/n/r/n` ,[blog](http://blog.jobbole.com/106632/?utm_source=blog.jobbole.com&utm_medium=relatedPosts)  
@@ -129,7 +129,8 @@ other:
   39. `git fetch --prune --prune-tags`  ,`git log --oneline --name-status --grep='Searched phrase'`    
   40. `git log commit-id-before commit-id --stat` show the lines added/changed/deleted. (`git diff --numstat HEAD~ `). 
   41. `SELECT db_name()` get current database name.   
-  42. `curl -k -O -L https://npmjs.org/install.sh`    `sh install.sh` install nodejs.  
+  42. `curl -k -O -L https://npmjs.org/install.sh`    `sh install.sh` install nodejs.    
+  43. `^x.y.z` stands for version between `x.y.z` and next major .   `~x.y.z` means between `x.y.z` and next minor.
 
 
 kube:  
