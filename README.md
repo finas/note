@@ -134,7 +134,8 @@ mis:
   40. `git log commit-id-before commit-id --stat` show the lines added/changed/deleted. (`git diff --numstat HEAD~ `). 
   41. `SELECT db_name()` get current database name.   
   42. `curl -k -O -L https://npmjs.org/install.sh`    `sh install.sh` install nodejs.    
-  43. `^x.y.z` stands for version between `x.y.z` and next major .   `~x.y.z` means between `x.y.z` and next minor.
+  43. `^x.y.z` stands for version between `x.y.z` and next major .   `~x.y.z` means between `x.y.z` and next minor.   
+  44. `kill $(lsof -ti:3000,3001)` kill ports in mac.  
 
 
 kube:  
