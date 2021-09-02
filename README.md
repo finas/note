@@ -89,6 +89,7 @@ git:
     30. `git stash push --keep-index -u` stash un-staged,untracked.  `git stash save --patch`.   
     31. [fast-forward](https://stackoverflow.com/questions/6701292/git-fast-forward-vs-no-fast-forward-merge).   
     32. `git reset` move back the history, `git revert` add a commit.     
+    33. `git add --interactive`   
 
 VSC:  
     1. `ctrl+D` add current selection to match . `Ctrl+Shift+D` + add all selection .    
