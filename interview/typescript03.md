@@ -19,4 +19,8 @@ function get<T extends o[],P extends ExtractKey<T>>(a:T,b:P):T[number][P[number]
 const data = [{a:{a1:1},b:2}]
 const t:ExtractKey<typeof data> = ['a']
 get(data,t)
+
+
+
+// extract class
 ```
