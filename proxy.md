@@ -25,3 +25,7 @@ npm config set https-proxy http://127.0.0.1:1087
 npm config list
 npm config delete https-proxy
 ```
+
+
+### check proxy
+`env | grep -i proxy`
