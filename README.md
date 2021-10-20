@@ -138,7 +138,8 @@ mis:
   41. `SELECT db_name()` get current database name.   
   42. `curl -k -O -L https://npmjs.org/install.sh`    `sh install.sh` install nodejs.    
   43. `^x.y.z` stands for version between `x.y.z` and next major .   `~x.y.z` means between `x.y.z` and next minor.   
-  44. `kill $(lsof -ti:3000,3001)` kill ports in mac.  
+  44. `kill $(lsof -ti:3000,3001)` kill ports in mac.    
+  45. `time nmap -p 22 portquiz.net` test specified port. `time nmap portquiz.net` popular port.  `time nmap -p- portquiz.net | grep -i open` all outgoing port.(Very slow). 
 
 
 kube:  
