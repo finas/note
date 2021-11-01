@@ -58,26 +58,26 @@ linux:
 
 git:  
     1. `git show head~1:/path/to/file`    
-    2. `git rev-list --all --remotes --pretty=oneline -- src/views/trade/other.vue` get the file commit log in all history  
-    3. `git config --system -l` to check system check. Then `git config --system --unset credential.helper` to forget the credential .  `git config --global credential.helper store` enable credentials storage  `git config --global core.ignorecase true`  
-    4. `git ls-files -z | xargs -0 -n1 -I{} -- git log -1 --format="%ai {}" {} | sort` retrieve the last date of all files  
-    5. `git diff origin/master > patch`,`git apply --check xxx.patch`,`git apply --status xxx.patch`, `git apply --revers patch`  to update branch    
-    6. `git reset --hard HEAD^` or `git reset --soft HEAD^` to undo a local commit .`git revert HEAD` then `git push origin` for remote  update. 
-    7. `git config credential.helper cache` for temporary cache your account infor  `git config --system --unset credential.helper`
-    8. `git diff ..origin/dev|git apply` apply the diff between remote dev to local current head  in stage    
-    9. `git log --all --decorate --simplify-by-decoration --graph --all --date=relative` try to figure the relationship  between branch  
-    10. `git branch --contains --all $branchName` show all branch(include remote) which contain current branch     
-    11. `git config --global core.fileMode false` ignore  
-    12. `git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"`  
-    13. `git log origin/release..HEAD --graph --decorate --oneline` show the different commit between branch   
-    14. `gitk --all file` will show the all history of the file  `git checkout -p ` give you a change to checkout each hun individually  
-    15. `unable to access 'https://github.com/xxxx/xxx.git': Failed to connect to 127.0.0.1 port 8087: Connection refused` may related to system http proxy `env|grep -i proxy`      
-    16.  `git show-ref --abbrev=7 --tags`  show tag commit id  
-    17.  `cat .git/refs/tags/*` show git tag  
-    18.  `npm outdated -g`  `npm ls --depth=1` `npm la`  `npm show package version` `npm search`  `npm completion >> ~/.bashrc`    
-    19. use `git patch` cherry pick only one file  `git diff <branch>..<other-branch> --<fileName> |git apply`  
+    2. `git rev-list --all --remotes --pretty=oneline -- src/views/trade/other.vue` get the file commit log in all history.   
+    3. `git config --system -l` to check system check. Then `git config --system --unset credential.helper` to forget the credential .  `git config --global credential.helper store` enable credentials storage  `git config --global core.ignorecase true`.   
+    4. `git ls-files -z | xargs -0 -n1 -I{} -- git log -1 --format="%ai {}" {} | sort` retrieve the last date of all files.   
+    5. `git diff origin/master > patch`,`git apply --check xxx.patch`,`git apply --status xxx.patch`, `git apply --revers patch`  to update branch.     
+    6. `git reset --hard HEAD^` or `git reset --soft HEAD^` to undo a local commit .`git revert HEAD` then `git push origin` for remote  update.   
+    7. `git config credential.helper cache` for temporary cache your account infor  `git config --system --unset credential.helper`. 
+    8. `git diff ..origin/dev|git apply` apply the diff between remote dev to local current head  in stage     
+    9. `git log --all --decorate --simplify-by-decoration --graph --all --date=relative` try to figure the relationship  between branch   
+    10. `git branch --contains --all $branchName` show all branch(include remote) which contain current branch      
+    11. `git config --global core.fileMode false` ignore.   
+    12. `git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"`.   
+    13. `git log origin/release..HEAD --graph --decorate --oneline` show the different commit between branch.    
+    14. `gitk --all file` will show the all history of the file  `git checkout -p ` give you a change to checkout each hun individually   
+    15. `unable to access 'https://github.com/xxxx/xxx.git': Failed to connect to 127.0.0.1 port 8087: Connection refused` may related to system http proxy `env|grep -i proxy`.       
+    16.  `git show-ref --abbrev=7 --tags`  show tag commit id.   
+    17.  `cat .git/refs/tags/*` show git tag.   
+    18.  `npm outdated -g`  `npm ls --depth=1` `npm la`  `npm show package version` `npm search`  `npm completion >> ~/.bashrc`     
+    19. use `git patch` cherry pick only one file  `git diff <branch>..<other-branch> --<fileName> |git apply`   
     20. `git show branch:file`  `git merge branch --no-commit --no-ff` to ignore no-diff merge .  
-    21. [git ignore case default](https://stackoverflow.com/questions/52950/how-to-make-git-ignore-changes-in-case?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)  
+    21. [git ignore case default](https://stackoverflow.com/questions/52950/how-to-make-git-ignore-changes-in-case?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa).   
     22.  `git apply --3way patchFile.patch`  Typical fail case applies as much of the patch as it can, and leaves you with conflicts to work out in git however you normally do so.    
     23. `git push --follow-tags` only push tag created by `git tag -a <tagname> -m '<message>'`,`git push origin tagname` push the specified tag.   
     24. `git diff --name-only    release-1.1.19..release-1.1.31 -- '*.tsx' -- '*.ts' -- '*.less'` show the different between two commit.  
@@ -90,7 +90,8 @@ git:
     31. [fast-forward](https://stackoverflow.com/questions/6701292/git-fast-forward-vs-no-fast-forward-merge).   
     32. `git reset` move back the history, `git revert` add a commit.     
     33. `git add --interactive`.  
-    34. `git log -u -L <upperLimit>,<lowerLimit>:<path_to_filename>`
+    34. `git log -u -L <upperLimit>,<lowerLimit>:<path_to_filename>` specific the line number 
+    35. `git log --all --diff-filter=D --sumary`. show the deleted file.  `git checkout <SHA>^ -- /path/to/file`.  restore te file  
 
 VSC:  
     1. `ctrl+D` add current selection to match . `Ctrl+Shift+D` + add all selection .    
