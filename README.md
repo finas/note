@@ -147,3 +147,6 @@ mis:
 kube:  
 1. `kubectl logs -l app=elasticsearch -n namespace` get all pods log from namspace   
 2. `docker kill $(docker ps -q)` stop all docker containers.   
+3. `kubectl get pods -n $namespace` show all running pod under namespace.  
+4. `kubectl exec --stdin --tty $podname     -n $namespace -- /bin/bash` run the shell environment. 
+5. `helm search repo $name`,`helm list -n $namespace`     
