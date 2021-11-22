@@ -142,7 +142,7 @@ mis:
   43. `^x.y.z` stands for version between `x.y.z` and next major .   `~x.y.z` means between `x.y.z` and next minor.   
   44. `kill $(lsof -ti:3000,3001)` kill ports in mac.    
   45. `time nmap -p 22 portquiz.net` test specified port. `time nmap portquiz.net` popular port.  `time nmap -p- portquiz.net | grep -i open` all outgoing port.(Very slow).   
-  46. `rectangle`, `alttab` keyboard tool in mac.   
+  46. `rectangle`, `alttab`, `Xnip` tool in mac.   
 
 
 kube:  
