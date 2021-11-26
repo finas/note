@@ -92,7 +92,7 @@ git:
     33. `git add --interactive`.  
     34. `git log -u -L <upperLimit>,<lowerLimit>:<path_to_filename>` specific the line number 
     35. `git log --all --diff-filter=D --sumary`. show the deleted file.  `git checkout <SHA>^ -- /path/to/file`.  restore te file  
-    36. `git branch --sort=-committerdate` descend, `git brand --sort=committerdate` asecend.   
+    36. `git branch --sort=-committerdate` descend, `git brand --sort=committerdate` asecend. `git branch -vv`.   
 
 VSC:  
     1. `ctrl+D` add current selection to match . `Ctrl+Shift+D` + add all selection .    
