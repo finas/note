@@ -24,6 +24,13 @@ npm config set proxy  http://127.0.0.1:1087
 npm config set https-proxy http://127.0.0.1:1087
 npm config list
 npm config delete https-proxy
+
+
+# socks 
+npm install -g http-proxy-to-socks
+hpts -s 127.0.0.1:1081 -p 8002
+npm config set proxy http://127.0.0.1:8002
+npm config set https-proxy http://127.0.0.1:8002
 ```
 
 
