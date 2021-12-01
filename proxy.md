@@ -1,6 +1,6 @@
 ### git
 ```bash
-# work on http remote
+# work on http remote, if you are using ssh url, check [this](https://stackoverflow.com/questions/58245255/how-to-force-git-to-use-socks-proxy-over-its-ssh-connection) may help.  
 git config --global http.proxy  http://127.0.0.1:1087
 git config --global https.proxy 'socks5://127.0.0.1:1087'
 git config --global  --get http.proxy
