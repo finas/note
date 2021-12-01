@@ -1,5 +1,6 @@
 ### git
 ```bash
+# work on http remote
 git config --global http.proxy  http://127.0.0.1:1087
 git config --global https.proxy 'socks5://127.0.0.1:1087'
 git config --global  --get http.proxy
