@@ -5,6 +5,13 @@ git config --global http.proxy  http://127.0.0.1:1087
 git config --global https.proxy 'socks5://127.0.0.1:1087'
 git config --global  --get http.proxy
 git config --global --unset https.proxy
+
+
+# config for ssh 
+Host bitbucket.org
+  Identityfile ~/.ssh/id_rsa
+  # ProxyCommand /bin/nc -X 5 -x 127.0.0.1:port %h %p    // socks proxy
+  # ProxyCommand socat - PROXY:127.0.0.1:%h:%p,proxyport=1087 //http proxy. 
 ```
 
 
