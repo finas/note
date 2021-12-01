@@ -53,7 +53,8 @@ linux:
   51. `ls -l node_modules/* | egrep "^l"` output the softlink 
   52. `find / -name art 2>/dev/null` to skip the error output. 
   53. `curl ip.sb` ,`curl ident.me` , `curl ip.cn`   
-  54. `%s/phrase to delete//gc` delete word in vim. 
+  54. `%s/phrase to delete//gc` delete word in vim.   
+  55. `apt-cache search keyword`.  ubuntu 
 
 
 git:  
