@@ -55,6 +55,7 @@ linux:
   53. `curl ip.sb` ,`curl ident.me` , `curl ip.cn`   
   54. `%s/phrase to delete//gc` delete word in vim.   
   55. `apt-cache search keyword`.  ubuntu 
+  56. `npm list --depth=0 2> >(grep -v "extraneous")` `npm list -s` ignore error message.  
 
 
 git:  
