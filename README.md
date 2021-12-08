@@ -146,6 +146,7 @@ mis:
   44. `kill $(lsof -ti:3000,3001)` kill ports in mac.    
   45. `time nmap -p 22 portquiz.net` test specified port. `time nmap portquiz.net` popular port.  `time nmap -p- portquiz.net | grep -i open` all outgoing port.(Very slow).   
   46. `rectangle`, `alttab`, `Xnip`, `keyCastr` tool in mac.   
+  47. [mute the soud of `tab` in window terminal](https://onelharrison.medium.com/how-to-mute-the-windows-terminal-bell-fee86af19ddb)
 
 
 kube:  
