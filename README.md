@@ -148,6 +148,7 @@ mis:
   45. `time nmap -p 22 portquiz.net` test specified port. `time nmap portquiz.net` popular port.  `time nmap -p- portquiz.net | grep -i open` all outgoing port.(Very slow).   
   46. `rectangle`, `alttab`, `Xnip`, `keyCastr` tool in mac.   
   47. [mute the soud of `tab` in window terminal](https://onelharrison.medium.com/how-to-mute-the-windows-terminal-bell-fee86af19ddb)
+  48. [remote send c when double click](https://social.technet.microsoft.com/Forums/en-US/0184ebe1-c5eb-4f5f-938e-c/why-does-it-auto-input-a-character-c-when-i-double-click-in-remote-desktop-also-found-this-issue?forum=w7itpronetworking). 
 
 
 kube:  
