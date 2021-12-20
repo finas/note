@@ -95,7 +95,8 @@ git:
     34. `git log -u -L <upperLimit>,<lowerLimit>:<path_to_filename>` specific the line number 
     35. `git log --all --diff-filter=D --sumary`. show the deleted file.  `git checkout <SHA>^ -- /path/to/file`.  restore te file  
     36. `git branch --sort=-committerdate` descend, `git brand --sort=committerdate` asecend. `git branch -vv`.   
-    37. `git rebase -i --ignore-date` update the date to current time
+    37. `git rebase -i --ignore-date` update the date to current time.  
+    38. `git config --global core.editor "vim"`  
 
 VSC:  
     1. `ctrl+D` add current selection to match . `Ctrl+Shift+D` + add all selection .    
