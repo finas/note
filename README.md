@@ -56,7 +56,8 @@ linux:
   54. `%s/phrase to delete//gc` delete word in vim.   
   55. `apt-cache search keyword`.  ubuntu 
   56. `npm list --depth=0 2> >(grep -v "extraneous")` `npm list -s` ignore error message.     
-  57. `find ./ -type d -name "node_modules" -exec rm -r {} \;` .  
+  57. `find ./ -type d -name "node_modules" -exec rm -r {} \;` .    
+  58. `docker build . -t application_name -f path_to_dockerfile`   
 
 
 git:  
