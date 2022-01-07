@@ -58,7 +58,8 @@ linux:
   56. `npm list --depth=0 2> >(grep -v "extraneous")` `npm list -s` ignore error message.     
   57. `find ./ -type d -name "node_modules" -exec rm -r {} \;` .    
   58. `docker build . -t application_name -f path_to_dockerfile`   
-  59. `git ls-files | grep '\.py' | xargs wc -l` list number of code line. `find . -name '*.php' | xargs wc -l` ,`wc -l **/*.tsx`
+  59. `git ls-files | grep '\.py' | xargs wc -l` list number of code line. `find . -name '*.php' | xargs wc -l` ,`wc -l **/*.tsx`.  
+  60. `npm view webpack versions --json`  
 
 
 git:  
