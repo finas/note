@@ -59,8 +59,9 @@ linux:
   57. `find ./ -type d -name "node_modules" -exec rm -r {} \;` .    
   58. `docker build . -t application_name -f path_to_dockerfile`   
   59. `git ls-files | grep '\.py' | xargs wc -l` list number of code line. `find . -name '*.php' | xargs wc -l` ,`wc -l **/*.tsx`.  
-  60. `npm view webpack versions --json`  
-
+  60. `npm view webpack versions --json`    
+  61. `ls -l -sh` , `du -h` for file human readable sizes   
+  
 
 git:  
     1. `git show head~1:/path/to/file`    
