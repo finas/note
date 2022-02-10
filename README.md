@@ -61,6 +61,7 @@ linux:
   59. `git ls-files | grep '\.py' | xargs wc -l` list number of code line. `find . -name '*.php' | xargs wc -l` ,`wc -l **/*.tsx`.  
   60. `npm view webpack versions --json`    
   61. `ls -l -sh` , `du -h` for file human readable sizes   
+  62. `ALL_PROXY=socks5://host:port brew update` `brew upgrade --cask chromedriver` 
   
 
 git:  
