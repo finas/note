@@ -157,7 +157,8 @@ mis:
   47. [mute the soud of `tab` in window terminal](https://onelharrison.medium.com/how-to-mute-the-windows-terminal-bell-fee86af19ddb)
   48. [remote send c when double click](https://social.technet.microsoft.com/Forums/en-US/0184ebe1-c5eb-4f5f-938e-c/why-does-it-auto-input-a-character-c-when-i-double-click-in-remote-desktop-also-found-this-issue?forum=w7itpronetworking).   
   49. (fix dock always cover the bottom of application)[https://appuals.com/how-to-fix-mac-dock-getting-stuck/] just `killall  Dock`.    
-  50. `open -e ~/.bashrc` mac. 
+  50. `open -e ~/.bashrc` mac.   
+  51. `npx kill-port 8080` kill port  
 
 
 kube:  
