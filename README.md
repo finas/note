@@ -159,6 +159,8 @@ mis:
   49. (fix dock always cover the bottom of application)[https://appuals.com/how-to-fix-mac-dock-getting-stuck/] just `killall  Dock`.    
   50. `open -e ~/.bashrc` mac.   
   51. `npx kill-port 8080` kill port  
+  52. `Array.from(Array(2), () => new Array(4))` create multi dimension array   
+
 
 
 kube:  
