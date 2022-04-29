@@ -62,6 +62,15 @@ linux:
   60. `npm view webpack versions --json`    
   61. `ls -l -sh` , `du -h` for file human readable sizes   
   62. `ALL_PROXY=socks5://host:port brew update` `brew upgrade --cask chromedriver` 
+  63. `grep " install " /var/log/dpkg.log*` installed packages with installation date  
+  64. `sshd -T | grep -E 'gatewayports|allowtcpforwarding'` Trouble enabling GatewayPorts for Remote Port Forwarding over SSH 
+  65.  Debug iptables   
+```bash
+iptables -t raw -A PREROUTING -p tcp --destination 192.168.0.0/24 --dport 80 -j TRACE
+iptables -t raw -A OUTPUT -p tcp --destination 192.168.0.0/24 --dport 80 -j TRACE
+
+cat /var/log/kern.log | grep 'TRACE:'  
+```
   
 
 git:  
