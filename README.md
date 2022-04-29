@@ -169,6 +169,7 @@ mis:
   50. `open -e ~/.bashrc` mac.   
   51. `npx kill-port 8080` kill port  
   52. `Array.from(Array(2), () => new Array(4))` create multi dimension array   
+  53. `pm2 startup` to setup auto restart strategy
 
 
 
