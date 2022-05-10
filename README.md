@@ -70,7 +70,8 @@ iptables -t raw -A PREROUTING -p tcp --destination 192.168.0.0/24 --dport 80 -j 
 iptables -t raw -A OUTPUT -p tcp --destination 192.168.0.0/24 --dport 80 -j TRACE
 
 cat /var/log/kern.log | grep 'TRACE:'  
-```
+```   
+  66. `crontab -l` , `crontab -e `
   
 
 git:  
