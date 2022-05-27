@@ -121,6 +121,7 @@ VSC:
     
 VIM:   
     1. `ma` set mark `a`, `'a`,`` `a ``  jump to mark `a`. `:marks` show the mark list.  
+    2. ctr+z to put vim background, bring it back by `fg`  
 
 mis:  
 
