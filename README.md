@@ -71,7 +71,8 @@ iptables -t raw -A OUTPUT -p tcp --destination 192.168.0.0/24 --dport 80 -j TRAC
 
 cat /var/log/kern.log | grep 'TRACE:'  
 ```   
-  66. `crontab -l` , `crontab -e `
+  66. `crontab -l` , `crontab -e `  
+  67. `cat /proc/meminfo`, `free -g` to check memory info
   
 
 git:  
