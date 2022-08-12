@@ -185,3 +185,5 @@ kube:
 3. `kubectl get pods -n $namespace` show all running pod under namespace.  
 4. `kubectl exec --stdin --tty $podname     -n $namespace -- /bin/bash` run the shell environment. 
 5. `helm search repo $name`,`helm list -n $namespace`     
+6. `docker container ls -a |grep docker-entry|awk '{print $1}'|xargs docker container rm`  
+7. `docker rmi $(docker images --filter "dangling=true" -q --no-trunc`
