@@ -74,6 +74,7 @@ cat /var/log/kern.log | grep 'TRACE:'
   66. `crontab -l` , `crontab -e `  
   67. `cat /proc/meminfo`, `free -g` to check memory info   
   68.  `sudo chown --reference ${DEST_DIR} -R ${DEST_DIR}/copied_dir` ,`chmod --reference=file1 file2`  
+  69. `ssh -L local_port:remote_host:remote_port ssh_host` make remote resource accessible in client.   `ssh -D local_port username@server.com` as socks5 proxy provider.  
   
 
 git:  
