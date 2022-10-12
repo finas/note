@@ -77,7 +77,7 @@ cat /var/log/kern.log | grep 'TRACE:'
   69. `ssh -L local_port:remote_host:remote_port ssh_host` make remote resource accessible in client.   `ssh -D local_port username@server.com` as socks5 proxy provider.  
   70. list files size `du -sh * | sort -h|tail -n 20`    
   71. copy exclude `cp -r `ls -A |grep -E -v "@storybook|@nx|typescript|.cache|.bin|@nrwl|@babel|@jest"` desition_folder`  
-  
+  72. do the same above `rsync -av --progress sourcefolder /destinationfolder --exclude thefoldertoexclude --exclude anotherfoldertoexclude`   
 
 git:  
     1. `git show head~1:/path/to/file`    
