@@ -190,3 +190,8 @@ kube:
 5. `helm search repo $name`,`helm list -n $namespace`     
 6. `docker container ls -a |grep docker-entry|awk '{print $1}'|xargs docker container rm`  
 7. `docker rmi $(docker images --filter "dangling=true" -q --no-trunc`
+8. `kubectl describe ingress $container`,`kubectl describe configmap $container`
+9. `kubectl exec --stdin --tty $pod  -n $namespace -- /bin/sh`
+10. `kubectl logs pod` 
+11. `kubectl config get-contexts`,`kubectl config use-context $context`  , `kubectl config set-context --current --namespace=$namespace`
+12. `kubectl port-forward pod 80:127.0.0.1:8888`
