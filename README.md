@@ -118,7 +118,8 @@ git:
     36. `git branch --sort=-committerdate` descend, `git brand --sort=committerdate` asecend. `git branch -vv`.   
     37. `git rebase -i --ignore-date` update the date to current time.  
     38. `git config --global core.editor "vim"`  
-    39. git log --pretty=format:"%h%x09%an%x09%ad%x09%s" --graph --all --decorate --date=relative --abbrev-commit `%h`:hash, `%x09`:tab,`%an`:author_name,`%ad`:author_date,`%s`:subject
+    39. git log --pretty=format:"%h%x09%an%x09%ad%x09%s" --graph --all --decorate --date=relative --abbrev-commit `%h`:hash, `%x09`:tab,`%an`:author_name,`%ad`:author_date,`%s`:subject  
+    40. `git merge --no-commit --no-ff $BRANCH` test before merge than `git merge --continue`
 
 VSC:  
     1. `ctrl+D` add current selection to match . `Ctrl+Shift+D` + add all selection .    
