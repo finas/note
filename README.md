@@ -180,7 +180,8 @@ mis:
   52. `Array.from(Array(2), () => new Array(4))` create multi dimension array   
   53. `pm2 startup` to setup auto restart strategy.  
   54. `'ThisIsASlug'.replace(/(\w)(?=[/A-Z])/g,'$1 ')` split camelCase.
-  55. `sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder` clean mac DNS cache.  
+  55. `sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder` clean mac DNS cache.
+  56. `-scheme:chrome-extension -scheme:data` or `scheme:https` to filter out extension request in chronium based browser
 
 
 
