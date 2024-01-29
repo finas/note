@@ -191,14 +191,16 @@ mis:
 kube:  
 1. `kubectl logs -l app=elasticsearch -n namespace` get all pods log from namspace   
 2. `docker kill $(docker ps -q)` stop all docker containers.
-3. `docker exec -ti container_name /bin/bash` or `docker exec -ti container_name sh`  
-4. `kubectl get pods -n $namespace` show all running pod under namespace.  
-5. `kubectl exec --stdin --tty $podname     -n $namespace -- /bin/bash` run the shell environment. 
-6. `helm search repo $name`,`helm list -n $namespace`     
-7. `docker container ls -a |grep docker-entry|awk '{print $1}'|xargs docker container rm`  
-8. `docker rmi $(docker images --filter "dangling=true" -q --no-trunc`
-9. `kubectl describe ingress $container`,`kubectl describe configmap $container`
-10. `kubectl exec --stdin --tty $pod  -n $namespace -- /bin/sh`
-11. `kubectl logs pod` 
-12. `kubectl config get-contexts`,`kubectl config use-context $context`  , `kubectl config set-context --current --namespace=$namespace`
-13. `kubectl port-forward pod 80:127.0.0.1:8888`
+3. `docker exec -ti container_name /bin/bash` or `docker exec -ti container_name sh`
+4. `docker container ls|grep "yarn start"|awk '{print $1}'|xargs docker container stop`  
+5. `kubectl get pods -n $namespace` show all running pod under namespace.  
+6. `kubectl exec --stdin --tty $podname     -n $namespace -- /bin/bash` run the shell environment. 
+7. `helm search repo $name`,`helm list -n $namespace`     
+8. `docker container ls -a |grep docker-entry|awk '{print $1}'|xargs docker container rm`  
+9. `docker rmi $(docker images --filter "dangling=true" -q --no-trunc`
+10. `kubectl describe ingress $container`,`kubectl describe configmap $container`
+11. `kubectl exec --stdin --tty $pod  -n $namespace -- /bin/sh`
+12. `kubectl logs pod` 
+13. `kubectl config get-contexts`,`kubectl config use-context $context`  , `kubectl config set-context --current --namespace=$namespace`
+14. `kubectl port-forward pod 80:127.0.0.1:8888`
+15. 
