@@ -185,6 +185,7 @@ mis:
   56. `-scheme:chrome-extension -scheme:data` or `scheme:https` to filter out extension request in chronium based browser
   57. `-scheme:chrome-extension -scheme:data` or `scheme:https` to filter noise request in chrome network tab
   58. `git commit --fixup=HEAD` and `GIT_SEQUENCE_EDITOR=true git rebase -i --autosquash HEAD~2` after `git add` to quick fixup the commit.
+  59. `lpstat -s` show mac printer IP  
 
 
 
