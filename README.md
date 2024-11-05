@@ -185,7 +185,8 @@ mis:
   56. `-scheme:chrome-extension -scheme:data` or `scheme:https` to filter out extension request in chronium based browser
   57. `-scheme:chrome-extension -scheme:data` or `scheme:https` to filter noise request in chrome network tab
   58. `git commit --fixup=HEAD` and `GIT_SEQUENCE_EDITOR=true git rebase -i --autosquash HEAD~2` after `git add` to quick fixup the commit.
-  59. `lpstat -s` show mac printer IP  
+  59. `lpstat -s` show mac printer IP
+  60. [Route different traffic through different network interfaces in windows](https://serverfault.com/questions/92575/how-to-route-different-traffic-thru-different-network-interfaces-in-windows) `route add 10.183.148.0 mask 255.255.255.0 10.57.175.79`  
 
 
 
