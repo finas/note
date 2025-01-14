@@ -205,4 +205,4 @@ kube:
 12. `kubectl logs pod` 
 13. `kubectl config get-contexts`,`kubectl config use-context $context`  , `kubectl config set-context --current --namespace=$namespace`
 14. `kubectl port-forward pod 80:127.0.0.1:8888`
-15. 
+15. `docker ps -aq --filter "ancestor=postgres:15"|xargs -r docker stop`  
